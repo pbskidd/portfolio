@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Other Design Projects | Ecuadane</title>
+  <!-- Tailwind CSS (CDN for quick prototyping) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* Maintain a fixed 3‑column grid at every breakpoint */
+    .grid-fixed-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem; /* space between tiles */
+    }
+    /* Simple fade‑in for modal */
+    .fade-in {
+      animation: fadeIn 0.25s ease-out both;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+  <main class="container mx-auto px-4 py-12">
+    <h1 class="text-3xl font-bold text-center mb-8">Other Design Projects</h1>
+
+    <!-- 3 × 3 Gallery -->
+    <div id="gallery" class="grid-fixed-3">
+      <!-- Nine placeholder tiles -->
+      <!-- Tile template (copy‑paste 9× with incremental numbering) -->
+      <figure class="relative cursor-pointer group">
+        <img src="./img/Bitwise3.jpg" alt="Project 1" class="w-full h-auto object-cover" />
+        <figcaption class="absolute inset-x-0 bottom-0 bg-black/60 text-white text-center text-sm py-2 opacity-0 group-hover:opacity-100 transition-opacity">Project 1</figcaption>
+      </figure>
+
+      <figure class="relative cursor-pointer group">
+        <img src="./img/Alisal Blanket pic.png" alt="Project 2" class="w-full h-auto object-cover" />
+        <figcaption class="absolute inset-x-0 bottom-0 bg-black/60 text-white text-center text-sm py-2 opacity-0 group-hover:opacity-100 transition-opacity">Project 2</figcaption>
+      </figure>
+
+      <figure class="relative cursor-pointer group">
+        <img src="./img/Bitwise3.jpg" " alt="Project 3" class="w-full h-auto object-cover" />
+        <figcaption class="absolute inset-x-0 bottom-0 bg-black/60 text-white text-center text-sm py-2 opacity-0 group-hover:opacity-100 transition-opacity">Project 3</figcaption>
+      </figure>
+
+      <figure class="relative cursor-pointer group">
+        <img src="https://via.placeholder.com/600x400?text=Project+4" alt="Project 4" class="w-full h-auto object-cover" />
+        <figcaption class="absolute inset-x-0 bottom-0 bg-black/60 text-white text-center text-sm py-2 opacity-0 group-hover:opacity-100 transition-opacity">Project 4</figcaption>
+      </figure>
+
+      <figure class="relative cursor-pointer group">
+        <img src="https://via.placeholder.com/600x400?text=Project+5" alt="Project 5" class="w-full h-auto object-cover" />
+        <figcaption class="absolute inset-x-0 bottom-0 bg-black/60 text-white text-center text-sm py-2 opacity-0 group-hover:opacity-100 transition-opacity">Project 5</figcaption>
+      </figure>
+
+      <figure class="relative cursor-pointer group">
+        <img src="https://via.placeholder.com/600x400?text=Project+6" alt="Project 6" class="w-full h-auto object-cover" />
+        <figcaption class="absolute inset-x-0 bottom-0 bg-black/60 text-white text-center text-sm py-2 opacity-0 group-hover:opacity-100 transition-opacity">Project 6</figcaption>
+      </figure>
+
+      <figure class="relative cursor-pointer group">
+        <img src="https://via.placeholder.com/600x400?text=Project+7" alt="Project 7" class="w-full h-auto object-cover" />
+        <figcaption class="absolute inset-x-0 bottom-0 bg-black/60 text-white text-center text-sm py-2 opacity-0 group-hover:opacity-100 transition-opacity">Project 7</figcaption>
+      </figure>
+
+      <figure class="relative cursor-pointer group">
+        <img src="https://via.placeholder.com/600x400?text=Project+8" alt="Project 8" class="w-full h-auto object-cover" />
+        <figcaption class="absolute inset-x-0 bottom-0 bg-black/60 text-white text-center text-sm py-2 opacity-0 group-hover:opacity-100 transition-opacity">Project 8</figcaption>
+      </figure>
+
+      <figure class="relative cursor-pointer group">
+        <img src="https://via.placeholder.com/600x400?text=Project+9" alt="Project 9" class="w-full h-auto object-cover" />
+        <figcaption class="absolute inset-x-0 bottom-0 bg-black/60 text-white text-center text-sm py-2 opacity-0 group-hover:opacity-100 transition-opacity">Project 9</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <!-- Full‑screen lightbox -->
+  <div id="lightbox" class="fixed inset-0 bg-black/90 hidden z-50 flex flex-col fade-in">
+    <button id="lightbox-close" class="absolute top-4 right-6 text-white text-5xl leading-none hover:text-gray-300" aria-label="Close">&times;</button>
+
+    <img id="lightbox-img" src="#" alt="Enlarged project" class="m-auto max-w-full max-h-full object-contain" />
+
+    <div id="lightbox-caption" class="text-center text-white mt-6 pb-12">
+      <h2 class="text-2xl font-semibold">Project Title</h2>
+      <p class="mt-2">Subtitle placeholder goes here.</p>
+    </div>
+  </div>
+
+  <!-- Interaction logic -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const lightbox   = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const captionBox = document.getElementById('lightbox-caption');
+      const closeBtn   = document.getElementById('lightbox-close');
+
+      // Open lightbox on tile click
+      document.querySelectorAll('#gallery figure').forEach((fig, idx) => {
+        fig.addEventListener('click', () => {
+          const img = fig.querySelector('img');
+          lightboxImg.src = img.src;
+          captionBox.querySelector('h2').textContent = `Project ${idx + 1}`;
+          captionBox.querySelector('p').textContent  = 'Subtitle placeholder goes here.';
+
+          lightbox.classList.remove('hidden');
+          document.body.classList.add('overflow-hidden'); // avoid background scroll
+        });
+      });
+
+      // Close helpers
+      function closeLightbox() {
+        lightbox.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+      }
+
+      closeBtn.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', e => {
+        // Click outside the image closes the modal
+        if (e.target === lightbox) closeLightbox();
+      });
+      // ESC key closes modal
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) closeLightbox();
+      });
+    });
+  </script>
+</body>
+</html>

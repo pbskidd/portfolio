@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Andrews Golf Club | Custom Branded Blankets</title>
+    <meta name="description" content="St. Andrews Golf Club custom branded blankets - Celebrating the 'Home of Golf' with custom anniversary blankets.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2c3e50',
+                        secondary: '#34495e',
+                        accent: '#c0392b',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full bg-white bg-opacity-95 shadow-md z-40 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="../index.html" class="text-2xl font-serif font-bold text-primary">Ecuadane Luxury Blankets</a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8">
+                <a href="../index.html" class="text-primary hover:text-accent transition-colors duration-300">Home</a>
+                <a href="../index.html#portfolio" class="text-primary hover:text-accent transition-colors duration-300">Portfolio</a>
+                <a href="../index.html#how-it-works" class="text-primary hover:text-accent transition-colors duration-300">How It Works</a>
+                <a href="../index.html#about" class="text-primary hover:text-accent transition-colors duration-300">About</a>
+                <a href="../index.html#contact" class="px-5 py-2 bg-accent text-white rounded hover:bg-opacity-90 transition-all duration-300">Start Your Project</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-primary text-2xl" id="mobile-menu-button">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu fixed top-0 left-0 h-full w-3/4 bg-white shadow-lg z-50 p-6" id="mobile-menu">
+            <div class="flex justify-between items-center mb-8">
+                <span class="text-xl font-serif font-bold text-primary">Menu</span>
+                <button class="text-primary text-2xl" id="close-mobile-menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="flex flex-col space-y-6">
+                <a href="../index.html" class="text-primary hover:text-accent transition-colors duration-300">Home</a>
+                <a href="../index.html#portfolio" class="text-primary hover:text-accent transition-colors duration-300">Portfolio</a>
+                <a href="../index.html#how-it-works" class="text-primary hover:text-accent transition-colors duration-300">How It Works</a>
+                <a href="../index.html#about" class="text-primary hover:text-accent transition-colors duration-300">About</a>
+                <a href="../index.html#contact" class="px-5 py-2 bg-accent text-white rounded hover:bg-opacity-90 transition-all duration-300 text-center">Start Your Project</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Project Header -->
+    <section class="pt-32 pb-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center mb-8">
+                <a href="../index.html" class="text-accent hover:underline mr-4">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center mb-12">
+                <img src="../img/st-andrews-logo.svg" alt="St. Andrews Golf Club Logo" class="h-20 md:h-24 mr-6 mb-4 md:mb-0 bg-white p-2 rounded">
+                <div>
+                    <h1 class="text-3xl md:text-5xl font-serif font-bold mb-2">St. Andrews Golf Club</h1>
+                    <p class="text-xl text-gray-600">Custom Anniversary Blankets for the Home of Golf</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Project Gallery -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div>
+                    <img src="../img/clubs/St. Andrews-clubhouse-cropped.png" alt="St. Andrews Golf Club Clubhouse" class="w-full h-auto rounded-lg shadow-lg project-image">
+					<br>
+					<img src="../img/clubs/St. Andrew's Blanket.png" alt="St. Andrews Golf Club Blanket" class="w-full h-auto rounded-lg shadow-lg project-image">
+					
+				</div>
+                <div>
+					<img src="../img/clubs/St.andrews-the-campus.jpg" alt="St. Andrews Golf Club Clubhouse" class="w-full h-auto rounded-lg shadow-lg project-image">
+					<br>
+                    <img src="../img/clubs/St. Andrews Mural Blanket.png" alt="St. Andrews Golf Club Blanket" class="w-full h-auto rounded-lg shadow-lg project-image">
+					
+					
+					
+				</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Project Description -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-serif font-bold mb-6">Project Overview</h2>
+                <p class="text-lg text-gray-700 mb-6">St. Andrews Golf Club, celebrated as the "Home of Golf," commissioned us to create custom anniversary blankets that would honor their rich heritage and tradition while providing members with a keepsake that embodies the club's prestige and history.</p>
+                
+                <h3 class="text-2xl font-serif font-bold mb-4 mt-8">The Challenge</h3>
+                <p class="text-lg text-gray-700 mb-6">Our challenge was to design blankets that would capture the essence of St. Andrews—its historical significance, timeless elegance, and the reverence it holds in the golfing world—while creating a practical item that members would proudly display and use.</p>
+                
+                <h3 class="text-2xl font-serif font-bold mb-4 mt-8">Our Approach</h3>
+                <p class="text-lg text-gray-700 mb-6">We collaborated with the club's leadership to develop a design that honored their legacy while maintaining a sophisticated aesthetic. The resulting blankets featured:</p>
+                <ul class="list-disc pl-6 mb-6 text-lg text-gray-700 space-y-2">
+                    <li>The iconic St. Andrews crest and logo</li>
+                    <li>A subtle pattern inspired by the historic course layout</li>
+                    <li>Anniversary dates commemorating the club's milestone</li>
+                    <li>Premium materials that reflect the club's standards of excellence</li>
+                    <li>Traditional colors that align with the club's heritage</li>
+                </ul>
+                
+                <h3 class="text-2xl font-serif font-bold mb-4 mt-8">The Result</h3>
+                <p class="text-lg text-gray-700 mb-6">The custom anniversary blankets were distributed to members during a special commemorative event. They were received with enthusiasm and have become cherished mementos that connect members to the club's storied past and present.</p>
+                <p class="text-lg text-gray-700 mb-6">Many members display the blankets in their homes, offices, and even in their golf carts during rounds at the club, creating a visible symbol of their membership and the club's prestigious heritage.</p>
+                
+												<div style="text-align: center; margin: 2rem 0;">
+  <a href="../attachments/st.andrew's catalog.pdf" target="_blank" rel="noopener" class="inline-block text-blue-600 hover:underline text-lg font-semibold">
+    View the St. Andrew's Design Catalog (PDF)
+  </a>
+</div>
+				
+				
+				
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md mt-8">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 text-lg italic">"A perfect tribute to our heritage. Members are proud to display and use their commemorative blankets, which have become a tangible connection to our club's history and traditions."</p>
+                    <div class="flex items-center">
+                        <div>
+                            <h4 class="font-bold">St. Andrews Golf Club</h4>
+                            <p class="text-sm text-gray-500">Club President</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Related Projects -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-serif font-bold mb-8 text-center">Related Projects</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Ferrari Club of the Netherlands -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="relative h-64">
+                        <img src="../img/clubs/Ferrari of Netherlands blanket.jpeg" alt="Ferrari Club of the Netherlands Blanket" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="../img/clubs/fcn_logo_2022.png" alt="Ferrari Club Logo" class="h-10 mr-4">
+                            <h3 class="text-xl font-bold">Ferrari Club of the Netherlands</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Uniting Ferrari enthusiasts with a bespoke keepsake for the annual European tour.</p>
+                        <a href="ferrari.html" class="text-accent hover:underline">View Project <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Greenwich Polo Club -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="relative h-64">
+                        <img src="../img/clubs/Greenwich Polo Picnic.png" alt="Greenwich Polo Club Picnic" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="../img/clubs/Greenwich Polo Club-Logo.png" alt="Greenwich Polo Club Logo" class="h-10 mr-4">
+                            <h3 class="text-xl font-bold">Greenwich Polo Club</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Prestigious polo club known for hosting world-class tournaments and events.</p>
+                        <a href="greenwich-polo.html" class="text-accent hover:underline">View Project <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Notre Dame University -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="relative h-64">
+                        <img src="../img/universities/Mendoza Business School.png" alt="Notre Dame University Blanket" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img src="../img/notre dame logo.jpg" alt="Notre Dame Logo" class="h-10 mr-4">
+                            <h3 class="text-xl font-bold">University of Notre Dame</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Leading Catholic research university, known for excellence in academics and athletics.</p>
+                        <a href="notre-dame.html" class="text-accent hover:underline">View Project <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">Ready to Create Your Custom Blankets?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Let us help you design custom blankets that tell your story and create lasting impressions for your organization.</p>
+            <a href="../index.html#contact" class="px-8 py-3 bg-accent text-white text-lg rounded-md hover:bg-opacity-90 transition-all duration-300 inline-block">Start Your Project</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Ecuadane Luxury Blankets</h3>
+                    <p class="text-gray-300 mb-4">Crafting luxury branded experiences through custom-designed blankets.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-accent transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-accent transition-colors"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white hover:text-accent transition-colors"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white hover:text-accent transition-colors"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="../index.html#portfolio" class="text-gray-300 hover:text-white transition-colors">Portfolio</a></li>
+                        <li><a href="../index.html#how-it-works" class="text-gray-300 hover:text-white transition-colors">How It Works</a></li>
+                        <li><a href="../index.html#about" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+                        <li><a href="../index.html#contact" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Industries</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Luxury Clubs</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Hospitality</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Universities</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Nonprofits</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Corporate Gifts</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>123 Luxury Lane, Suite 100<br>New York, NY 10001</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3"></i>
+                            <span>(800) 123-4567</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span>info@ecuadaneluxury.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Ecuadane Luxury Blankets. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Custom JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
