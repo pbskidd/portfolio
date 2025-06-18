@@ -131,8 +131,7 @@
             <div class="max-w-4xl mx-auto">
 			
                 <h2 class="text-3xl font-serif font-bold mb-6 project-title">Project Overview</h2>
-                <p class="text-lg text-gray-700 mb-6 project-p">Perched atop Pat’s Hill and opened in 1933 by Milton S. Hershey during the depths of the Great Depression, The historic Hotel Hershey is celebrated for its Spanish Colonial Revival architecture, chocolate-infused hospitality. Our assignment was to weave that storied legacy into an intricate landscape, representing the splendor of the main hotel façade, providing a cozy touch for al-fresco patio evenings. 
-</p>
+                <p class="text-lg text-gray-700 mb-6 project-p">Alisal Ranch, a luxury resort in California’s Santa Ynez Valley, partnered with us to design custom blankets that reflect their rustic elegance. These versatile pieces enhance guest rooms, outdoor adventures, and starlit events—serving as both practical amenities and lasting mementos that inspire return visits.</p>
                 
 				<!--<div style="text-align: center; margin: 2rem 0;">
 					<a href="assets/attachments/alisal ranch catalog-t.pdf" target="_blank" rel="noopener" class="inline-block text-blue-600 hover:underline text-lg font-semibold">
@@ -147,15 +146,17 @@
 	  <div class="container mx-auto px-4">
 		<div class="gallery-4">
 		  <figure class="gallery-4-item">
-			<img src="assets/img/hospitality/Hershey Hotel-blanket pattern.png" class="popout" alt="Hershey Hotel - Image 1">
+			<img src="assets/img/hospitality/Alisal1.jpeg" class="popout" alt="Alisal Ranch - Image 1">
 		  </figure>
 		  <figure class="gallery-4-item">
-			<img src="assets/img/hospitality/hotel hershey-front.jpg" class="popout"  alt="Hershey Hotel - Image 2">
+			<img src="assets/img/hospitality/Alisal2.jpeg" class="popout"  alt="Alisal Ranch- Image 2">
 		  </figure>
 		  <figure class="gallery-4-item">
-			<img src="assets/img/hospitality/Hershey Fountain.png" class="popout"  alt="Hershey Hotel - Image 3">
+			<img src="assets/img/hospitality/Alisal3.jpeg" class="popout"  alt="Alisal Ranch - Image 3">
 		  </figure>
-
+		  <figure class="gallery-4-item">
+			<img src="assets/img/hospitality/Alisal4.jpeg" class="popout"  alt="Alisal Ranch - Image 4">
+		  </figure>
 		</div>
 	  </div>
 	</section>				
@@ -182,18 +183,18 @@
 
         </div>
     </section>
-     <!-- Parallax Section#2 -->
+    <!-- Parallax Section#2 -->
 	<section class="parallax parallax2">
 	  <div class="parallax-content">
 		<h2>Ready to Create Your Own?</h2>
 	   <p class="text-xl mb-8 max-w-3xl mx-auto">Let's design a custom blanket to tell your story and create a lasting impression.</p>
 	   <a href="about-us.html#contact" class="btn-primary">Start Your Design</a>
-	   <br><br><a class="backlink" href="index.html#portfolio">Back to Gallery</a>
+	   <br><br><a href="index.html#portfolio">Back to Gallery</a>
 	  </div>
-	</section>
+	</section
 
     
- <!-- Footer -->
+
     <footer class="footer">
         <div class="container">
 
