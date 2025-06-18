@@ -36,7 +36,7 @@
 	<link rel="stylesheet" href="parallax.css">
 	<style>
 		.parallax1 {background-image: url("assets/img/hospitality/Alisal4.jpeg");}
-		.parallax2 {background-image: url("assets/img/Alisal Blanket pic.png");}
+		.parallax2 {background-image: url("assets/img/hospitality/Alisal Blanket pic.png");}
 	</style>
 	
 	<!-- Google Fonts -->
