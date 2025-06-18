@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Hotel Hershey | Custom Branded Blankets</title>
+    <meta
+        name="description"
+        content="Custom Ecuadane blankets for The Hotel Hershey – celebrating a Pennsylvania icon with Mediterranean-inspired luxury throws."
+    />
+
+ <!-- Tailwind CSS -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2c3e50',
+                        secondary: '#34495e',
+                        accent: '#c0392b',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+	
+	
+	<!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles2.css">
+	<link rel="stylesheet" href="tailwind-overrides.css">
+	
+	<!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	
+	
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+    
+<!-- Navigation -->
+<nav class="nav-container bg-white shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+
+      <!-- ① Brand / logo -->
+      <a href="index.html" class="flex items-center">
+        <img src="assets/img/Ecuadane Logo-sm.png" alt="Brand" class="h-12 w-auto">
+      </a>
+
+      <!-- ② Desktop links -->
+      <ul class="hidden md:flex space-x-8 font-medium">
+        <li class="li-shift"><a href="index.html" class="hover:text-primary">Home</a></li>
+		<li class="li-shift"><a href="customization.html" class="hover:text-primary li-shift">Customization</a></li>
+        <li><button class="btn-refined-primary">Design Your Own</button></li>
+      </ul>
+
+      <!-- ③ Hamburger button (md:hidden keeps it mobile-only) -->
+      <button id="menu-toggle"
+              class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-primary">
+        <!-- Icon from Heroicons -->
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+             fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ④ Mobile slide-down menu -->
+  <ul id="mobile-menu"
+      class="md:hidden hidden px-4 pb-4 space-y-2 font-medium">
+    <li><a href="index.html" class="block py-2 border-b">Home</a></li>
+    <li><a href="customization.html" class="block py-2 border-b">Customization</a></li>
+	<li><button class="btn-refined-primary">Design Your Own</button></li>
+  </ul>
+</nav>
+
+    <!-- Header -->
+    <section class="pt-32 pb-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center mb-12">
+                <!-- Replace with an official Hotel Hershey logo if available -->
+                <img
+                    src="assets/img/hospitality/HotelHershey logo.png"
+                    alt="The Hotel Hershey Logo"
+                    class="h-20 md:h-24 mr-6 mb-4 md:mb-0 bg-white p-2 rounded popout"
+                />
+                <div>
+                    <h1
+                        class="text-3xl md:text-5xl font-serif font-bold mb-2"
+                    >
+                        The Hotel Hershey
+                    </h1>
+                    <p class="text-xl text-gray-600">
+                        Mediterranean-inspired Luxury Meets Chocolate
+                        Heritage
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div>
+                    <img
+                        src="assets/img/hospitality/hotel hershey-front.jpg"
+                        alt="The Hotel Hershey Exterior"
+                        class="w-full h-auto rounded-lg shadow-lg project-image popout"
+                    />
+					<br>
+					<img
+                        src="assets/img/hospitality/Hershey Fountain.png"
+                        alt="The Hotel Hershey Fountain Courtyard"
+                        class="w-full h-auto rounded-lg shadow-lg project-image popout"
+                    />
+					
+                </div>
+                <div>
+                    <img
+                        src="assets/img/hospitality/Hershey Hotel-blanket pattern.png"
+                        alt="Custom Hotel Hershey Blanket"
+                        class="w-full h-auto rounded-lg shadow-lg project-image popout"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Description -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-serif font-bold mb-6">
+                    Project Overview
+                </h2>
+                <p class="text-lg text-gray-700 mb-6">
+                    Perched atop Pat’s Hill and opened in
+                    <strong>1933</strong> by Milton S. Hershey during the
+                    depths of the Great Depression, The Hotel Hershey is
+                    celebrated for its <em>Spanish Colonial Revival</em>
+                    architecture, chocolate-infused hospitality, and
+                    <em>Historic Hotels of America</em> designation. Our aim
+                    was to weave that storied legacy into a series of bespoke
+                    Ecuadane blankets—luxurious keepsakes that echo the
+                    hotel’s Mediterranean inspiration while enveloping guests
+                    in warmth and chocolate-brown tones.<!-- :contentReference[oaicite:0]{index=0} -->
+                </p>
+
+
+
+
+
+								<div style="text-align: center; margin: 2rem 0;">
+<img src="assets/img/hospitality/hershey hotel view from above.jpg" alt="hotel hershey view" class="popout">
+</div>
+
+                <h3 class="text-2xl font-serif font-bold mb-4 mt-8">
+                    The Challenge
+                </h3>
+                <p class="text-lg text-gray-700 mb-6">
+                    Blend heritage and indulgence: capture the hotel’s
+                    historic elegance without compromising the playful guest experience. Blankets needed to be
+                    equally at home in suites, the award-winning spa, and the
+                    Chocolate World® retail space.
+                </p>
+
+                <h3 class="text-2xl font-serif font-bold mb-4 mt-8">
+                    Our Approach
+                </h3>
+                <p class="text-lg text-gray-700 mb-6">
+                    Working with the resort’s merchandising team, we designed
+                    a reversible throw featuring:
+                </p>
+                <ul
+                    class="list-disc pl-6 mb-6 text-lg text-gray-700 space-y-2"
+                >
+                    <li>
+                        Intricate landscapes image, representing the splendor of the main building
+                    </li>
+                    <li>
+                        A palette of colors representing Hotel Hershey’s iconic brand
+                    </li>
+                    <li>
+                        Subtle inclusind of the 1933 founding to the side of the
+                        silhouette of the hotel façade
+                    </li>
+                    <li>
+                        Soft, recycled high-performance weave for both sustainability and year-round
+                        Pennsylvania comfort
+                    </li>
+                </ul>
+
+                <h3 class="text-2xl font-serif font-bold mb-4 mt-8">
+                    The Result
+                </h3>
+                <p class="text-lg text-gray-700 mb-6">
+                    The blankets debuted in premium guest suites and The
+                    Circular® dining room, where they provide a cozy touch
+                    for al-fresco patio evenings. They’ve since become one of
+                    the resort’s top-selling signature items—souvenirs guests
+                    carry home as a tangible taste of Hershey’s sweetness.
+                    Staff now place a branded throw on turndown service for
+                    anniversary packages and spa retreats, reinforcing the
+                    hotel’s commitment to comfort and heritage.
+                </p>
+
+
+
+                <!-- Testimonial -->
+                <div
+                    class="bg-gray-50 p-8 rounded-lg shadow-md mt-8"
+                    data-aos="fade-up"
+                >
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p
+                        class="text-gray-700 mb-6 text-lg italic"
+                    >
+                        “Our guests adore the blankets—each one feels like a
+                        handwritten love letter from Hershey, capturing both
+                        our history and our commitment to genuine
+                        hospitality.”
+                    </p>
+                    <div class="flex items-center">
+                        <div>
+                            <h4 class="font-bold">
+                                The Hotel Hershey Merchandising Team
+                            </h4>
+                            <p class="text-sm text-gray-500">
+                                Retail & Guest Experience Manager
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Projects (reuse existing thumbnails/paths) -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2
+                class="text-3xl font-serif font-bold mb-8 text-center"
+            >
+                Related Projects
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Ferrari Club -->
+                <div
+                    class="bg-white rounded-lg overflow-hidden shadow-lg"
+                >
+                    <div class="relative h-64">
+                        <img
+                            src="assets/img/clubs/Ferrari of Netherlands blanket.jpeg"
+                            alt="Ferrari Club of the Netherlands Blanket"
+                            class="w-full h-full object-cover popout"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img
+                                src="assets/img/clubs/fcn_logo_2022.png"
+                                alt="Ferrari Club Logo"
+                                class="h-10 mr-4"
+                            />
+                            <h3 class="text-xl font-bold">
+                                Ferrari Club of the Netherlands
+                            </h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Uniting Ferrari enthusiasts with a bespoke
+                            keepsake for the annual European tour.
+                        </p>
+                        <a
+                            href="ferrari.html"
+                            class="text-accent hover:underline"
+                            >View Project
+                            <i
+                                class="fas fa-arrow-right ml-1"
+                            ></i
+                        ></a>
+                    </div>
+                </div>
+
+                <!-- Greenwich Polo -->
+                <div
+                    class="bg-white rounded-lg overflow-hidden shadow-lg"
+                >
+                    <div class="relative h-64">
+                        <img
+                            src="assets/img/clubs/Greenwich Polo Picnic.png"
+                            alt="Greenwich Polo Club Picnic"
+                            class="w-full h-full object-cover popout"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img
+                                src="assets/img/clubs/Greenwich Polo Club-Logo.png"
+                                alt="Greenwich Polo Club Logo"
+                                class="h-10 mr-4"
+                            />
+                            <h3 class="text-xl font-bold">
+                                Greenwich Polo Club
+                            </h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Prestigious polo club known for hosting 
+                            world-class tournaments and events.
+                        </p>
+                        <a
+                            href="greenwich-polo.html"
+                            class="text-accent hover:underline"
+                            >View Project
+                            <i
+                                class="fas fa-arrow-right ml-1"
+                            ></i
+                        ></a>
+                    </div>
+                </div>
+
+                <!-- St. Andrews -->
+                <div
+                    class="bg-white rounded-lg overflow-hidden shadow-lg"
+                >
+                    <div class="relative h-64">
+                        <img
+                            src="assets/img/clubs/St. Andrew's Blanket.png"
+                            alt="St. Andrews Blanket"
+                            class="w-full h-full object-cover popout"
+                        />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <img
+                                src="assets/img/st-andrews-logo.svg"
+                                alt="St. Andrews Logo"
+                                class="h-10 mr-4"
+                            />
+                            <h3 class="text-xl font-bold">
+                                St. Andrews Golf Club
+                            </h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">
+                            Celebrating “The Home of Golf” with custom
+                            anniversary blankets.
+                        </p>
+                        <a
+                            href="st-andrews.html"
+                            class="text-accent hover:underline"
+                            >View Project
+                            <i
+                                class="fas fa-arrow-right ml-1"
+                            ></i
+                        ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2
+                class="text-3xl md:text-4xl font-serif font-bold mb-6"
+            >
+                Ready to Create Your Custom Blankets?
+            </h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                Let us help you design custom blankets that tell your
+                story and create lasting impressions for your
+                organization.
+            </p>
+            <a
+                href="../index.html#contact"
+                class="px-8 py-3 bg-accent text-white text-lg rounded-md hover:bg-opacity-90 transition-all inline-block"
+                >Start Your Project</a
+            >
+        </div>
+    </section>
+
+ <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Ecuadane Artisan Designs</h3>
+                    <p>Crafting luxury custom blankets for discerning organizations worldwide.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="customization.html">Custom Design</a>
+                        <a href="customization.html">Associations & Clubs</a>
+                        <a href="customization.html">Institutions</a>
+                        <a href="customization.html">Hospitality</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#about">About Us</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#portfolio">Portfolio</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ecuadane Artisan Designs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+ <script>
+  AOS.init({
+    once: true,        // animate only the first time they scroll into view
+    duration: 600      // ms; adjust to taste
+  });
+</script>
+<script src="script.js"></script>
+<script>
+  const btn   = document.getElementById('menu-toggle');
+  const menu  = document.getElementById('mobile-menu');
+  btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+</script>
+</body>
+</html>

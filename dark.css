@@ -1,0 +1,49 @@
+.customization-project-hero {    
+	background: linear-gradient(135deg, #2C2C2C 0%, #8B7D6B 50%, #cac9c5 100%);
+}
+
+.hero-overlay {
+    FONT-WEIGHT: 200;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+	font-weight: 300;
+    color: #d5c5a4;
+}
+
+.bg-warm-white {
+    background-color: #31302e;
+}
+
+.text-headline {
+        color: rgb(157, 146, 132);
+}
+
+.text-body-large {
+    color: #a5a7a9;
+}
+
+.bg-soft-cream {
+    background-color: #52504e;
+}
+
+.benefit-item p {
+    line-height: 1.6;
+    color: #9d9ea2;
+    font-size: 0.95rem;
+}
+
+.intro-text p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #a5a7a9;
+    margin-bottom: 1.5rem;
+}
+
+
+.bg-white.shadow-lg"{
+    --tw-bg-opacity: 1;
+    background-color: rgb(99 96 91);
+}
+

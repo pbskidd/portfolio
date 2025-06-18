@@ -3,15 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Branded Blankets | Luxury Corporate Gifts</title>
-    <meta name="description" content="Elevate your brand with custom-designed luxury blankets for corporate gifts, events, and hospitality.">
-    <meta property="og:title" content="Custom Branded Blankets | Luxury Corporate Gifts">
-    <meta property="og:description" content="Elevate your brand with custom-designed luxury blankets for corporate gifts, events, and hospitality.">
-    <meta property="og:type" content="website">
-    
-	<link rel="icon" type="image/png" href=/img/favicon.png"?crop=center&amp;height=32&amp;v=1676471377&amp;width=32">
+    <title>Ecuadane Artisan Designs | Luxury Custom Blankets</title>
 	
-    <!-- Tailwind CSS -->
+	
+	<!-- Tailwind CSS -->
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -30,12 +26,18 @@
             }
         }
     </script>
-    
-    <!-- Google Fonts -->
+	
+	<!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles2.css">
+	<link rel="stylesheet" href="tailwind-overrides.css">
+	
+	<!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- Three.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     
@@ -45,522 +47,306 @@
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Inline Carousel CSS -->
-    <style>
-        /* Custom Styles */
-        .hero-section {
-            height: 100vh;
-            background-position: center;
-            background-size: cover;
-            position: relative;
-        }
-        
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4);
-        }
-        
-
-        
-        /* Carousel Styles */
-        .featured-carousel {
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-        }
-        
-        .featured-track {
-            display: flex;
-            transition: transform 0.8s ease-in-out;
-        }
-        
-        .featured-item {
-            min-width: 100%;
-            padding: 0 1rem;
-        }
-        
-        .carousel-nav {
-            display: flex;
-            justify-content: center;
-            margin-top: 2rem;
-        }
-        
-        .carousel-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background-color: #cbd5e0;
-            margin: 0 6px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        
-        .carousel-dot.active {
-            background-color: #c0392b;
-        }
-        
-        .carousel-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.9);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            z-index: 10;
-            transition: all 0.3s ease;
-        }
-        
-        .carousel-button:hover {
-            background-color: #fff;
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-        }
-        
-        .carousel-button.prev {
-            left: 10px;
-        }
-        
-        .carousel-button.next {
-            right: 10px;
-        }
-        
-        .carousel-button i {
-            color: #2c3e50;
-            font-size: 18px;
-        }
-        
-        /* For mobile screens, adjust the navigation buttons */
-        @media (max-width: 640px) {
-            .carousel-button {
-                width: 40px;
-                height: 40px;
-            }
-            
-            .carousel-button.prev {
-                left: 5px;
-            }
-            
-            .carousel-button.next {
-                right: 5px;
-            }
-        }
-        
-        /* Accessibility focus styles */
-        .carousel-button:focus,
-        .carousel-dot:focus {
-            outline: 2px solid #3182ce;
-            outline-offset: 2px;
-        }
-        
-        /* Animation for slide transitions */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-        .featured-item {
-            animation: fadeIn 0.8s ease-in-out;
-        }
-        
-        /* Mobile Menu */
-        .mobile-menu {
-            transform: translateX(-100%);
-            transition: transform 0.5s ease-in-out;
-        }
-        
-        .mobile-menu.active {
-            transform: translateX(0);
-        }
-    </style>
 </head>
-<body class="font-sans text-gray-800 bg-gray-50">
-    <!-- Navigation -->
-    <nav class="fixed top-0 left-0 w-full bg-white bg-opacity-95 shadow-md z-40 transition-all duration-300" id="navbar">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="#" class="text-2xl font-serif font-bold text-primary">Ecuadane Luxury Blankets</a>
-            
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex space-x-8">
-                <a href="#" class="text-primary hover:text-accent transition-colors duration-300">Home</a>
-                <a href="#portfolio" class="text-primary hover:text-accent transition-colors duration-300">Portfolio</a>
-                <a href="#how-it-works" class="text-primary hover:text-accent transition-colors duration-300">How It Works</a>
-                <a href="#about" class="text-primary hover:text-accent transition-colors duration-300">About</a>
-                <a href="#contact" class="px-5 py-2 bg-accent text-white rounded hover:bg-opacity-90 transition-all duration-300">Start Your Project</a>
-            </div>
-            
-            <!-- Mobile Menu Button -->
-            <button class="md:hidden text-primary text-2xl" id="mobile-menu-button">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-        
-        <!-- Mobile Menu -->
-        <div class="mobile-menu fixed top-0 left-0 h-full w-3/4 bg-white shadow-lg z-50 p-6" id="mobile-menu">
-            <div class="flex justify-between items-center mb-8">
-                <span class="text-xl font-serif font-bold text-primary">Menu</span>
-                <button class="text-primary text-2xl" id="close-mobile-menu">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div class="flex flex-col space-y-6">
-                <a href="#" class="text-primary hover:text-accent transition-colors duration-300">Home</a>
-                <a href="#portfolio" class="text-primary hover:text-accent transition-colors duration-300">Portfolio</a>
-                <a href="#how-it-works" class="text-primary hover:text-accent transition-colors duration-300">How It Works</a>
-                <a href="#about" class="text-primary hover:text-accent transition-colors duration-300">About</a>
-                <a href="#contact" class="px-5 py-2 bg-accent text-white rounded hover:bg-opacity-90 transition-all duration-300 text-center">Start Your Project</a>
-            </div>
-        </div>
-    </nav>
-    
-    <!-- Hero Section -->
-    <section class="hero-section bg-cover bg-center" style="background-image: url('img/Alisal\ Blanket\ pic.png');">
-        <div class="hero-overlay"></div>
-        <div class="container mx-auto px-4 h-full flex items-center relative z-10">
-            <div class="max-w-3xl" data-aos="fade-up" data-aos-duration="800">
-                <h1 class="text-4xl md:text-6xl font-serif font-bold text-white leading-tight mb-4">Crafting Luxury Branded Experiences</h1>
-                <p class="text-xl md:text-2xl text-white opacity-90 mb-8">Custom blankets that tell your story, elevate your brand, and create lasting impressions.</p>
-                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="#portfolio" class="px-8 py-3 bg-accent text-white text-lg rounded-md hover:bg-opacity-90 transition-all duration-300 text-center">Explore Our Work</a>
-                    <a href="#contact" class="px-8 py-3 bg-white text-primary text-lg rounded-md hover:bg-opacity-90 transition-all duration-300 text-center">Start Your Project</a>
+	
+<body>
+
+
+<!-- Navigation -->
+<nav class="nav-container bg-white shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+
+      <!-- ① Brand / logo -->
+      <a href="index.html" class="flex items-center">
+        <img src="assets/img/Ecuadane Logo-sm.png" alt="Brand" class="h-12 w-auto">
+      </a>
+
+      <!-- ② Desktop links -->
+      <ul class="hidden md:flex space-x-8 font-medium">
+        <li><a href="index.html#portfolio" class="hover:text-primary">Portfolio</a></li>
+        <li><a href="customization.html" class="hover:text-primary">How it Works</a></li>
+		<li><a href="https://www.ecuadane.com/" class="hover:text-primary">Private Collection</a></li>
+		<li><a href="about_us.html" class="hover:text-primary">About Us</a></li>
+      </ul>
+
+      <!-- ③ Hamburger button (md:hidden keeps it mobile-only) -->
+      <button id="menu-toggle"
+              class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-primary">
+        <!-- Icon from Heroicons -->
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+             fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ④ Mobile slide-down menu -->
+  <ul id="mobile-menu"
+      class="md:hidden hidden px-4 pb-4 space-y-2 font-medium">
+    <li><a href="index.html"      class="block py-2 border-b">Home</a></li>
+    <li><a href="index.html#portfolio" class="block py-2 border-b">Portfolio</a></li>
+	<li><a href="customization.html" class="block py-2 border-b">How it Works</a></li>
+	<li><a href="https://www.ecuadane.com/" class="block py-2 border-b">Private Collection</a></li>
+    <li><a href="about_us.html"   class="block py-2">Contact</a></li>
+  </ul>
+</nav>
+
+
+    <!-- Hero Carousel Section -->
+    <section class="hero-section">
+        <div class="carousel-container">
+            <div class="carousel-track" id="carouselTrack">
+			
+                <!-- St. Andrews Slide -->
+                <div class="carousel-slide">
+                    <img src="assets/img/clubs/St. Andrews-clubhouse.gif" alt="St. Andrews Golf" class="hero-image">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <div class="hero-logo">
+                            <img src="assets/img/st-andrews-logo.svg" alt="St. Andrews Logo">
+                        </div>
+                        <h1 class="hero-title">St. Andrews Golf Club</h1>
+                        <h2 class="hero-subtitle">Anniversary Collection</h2>
+                        <p class="hero-description">Celebrating the "Home of Golf" with custom anniversary blankets that embody tradition and excellence.</p>
+                        <div class="hero-buttons">
+                            <a href="st-andrews.html" class="btn-refined-primary btn-hero">View Project</a>
+                            <a href="#portfolio" class="btn-refined hidden-on-mobile">Explore Designs</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Client Logos -->
-    <section class="py-12 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-2xl font-serif text-center text-gray-500 mb-8">Trusted By</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
-                <img src="img/clubs/fcn_logo_2022.png" alt="Ferrari Club of the Netherlands" class="h-12 md:h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-500" data-aos="fade-up" data-aos-delay="100">
-                <img src="img/clubs/Greenwich Polo Club-Logo.png" alt="Greenwich Polo Club" class="h-12 md:h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-500" data-aos="fade-up" data-aos-delay="200">
-                <img src="img/st-andrews-logo.svg" alt="St. Andrews Golf Club" class="h-12 md:h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-500" data-aos="fade-up" data-aos-delay="300">
-                <img src="img/Wounded_Warrior_Project_logo.svg.png" alt="Wounded Warrior Project" class="h-12 md:h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-500" data-aos="fade-up" data-aos-delay="400">
-                <img src="img/notre dame logo.jpg" alt="Notre Dame University" class="h-12 md:h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-500" data-aos="fade-up" data-aos-delay="500">
-                <img src="img/Alisal Brand Lockup Black FA.jpg" alt="Alisal Ranch" class="h-12 md:h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-500" data-aos="fade-up" data-aos-delay="600">
-            </div>
-        </div>
-    </section>
-    
-    <!-- Featured Projects Carousel -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-serif font-bold text-center mb-12" data-aos="fade-up">Featured Projects</h2>
-            
-            <div class="relative" data-aos="fade-up" data-aos-delay="400">
-                <!-- Carousel Navigation Buttons -->
-                <button class="carousel-button prev" aria-label="Previous slide">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="carousel-button next" aria-label="Next slide">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-                
-                <!-- Carousel Container -->
-                <div class="featured-carousel">
-                    <div class="featured-track" id="featured-track">
-                        <!-- Ferrari Club of the Netherlands -->
-                        <div class="featured-item">
-                            <div class="bg-white rounded-lg overflow-hidden shadow-lg">
-                                <div class="relative h-80 md:h-96">
-                                    <img src="img/clubs/Ferrari of Netherlands blanket.jpeg" alt="Ferrari Club of the Netherlands Blanket" class="w-full h-full object-cover">
-                                </div>
-                                <div class="p-6">
-                                    <div class="flex items-center mb-4">
-                                        <img src="img/clubs/fcn_logo_2022.png" alt="Ferrari Club Logo" class="h-10 mr-4">
-                                        <h3 class="text-xl font-bold">Ferrari Club of the Netherlands</h3>
-                                    </div>
-                                    <p class="text-gray-600 mb-4">Uniting Ferrari enthusiasts with a bespoke keepsake for the annual European tour—luxury and excitement, woven together.</p>
-                                    <a href="projects/ferrari.html" class="text-accent hover:underline">View Project <i class="fas fa-arrow-right ml-1"></i></a>
-                                </div>
-                            </div>
+				
+                <!-- Ferrari Slide -->
+                <div class="carousel-slide">
+                    <img src="assets/img/clubs/Ferrari5.png" alt="Ferrari Club" class="hero-image">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <div class="hero-logo">
+                            <img src="assets/img/clubs/fcn_logo_2022.png" alt="Ferrari Club Logo">
                         </div>
-                        
-                        <!-- Wounded Warrior Project -->
-                        <div class="featured-item">
-                            <div class="bg-white rounded-lg overflow-hidden shadow-lg">
-                                <div class="relative h-80 md:h-96">
-                                    <img src="img/Wounded Warrior Blanket Displayed.png" alt="Wounded Warrior Project Blanket" class="w-full h-full object-cover">
-                                </div>
-                                <div class="p-6">
-                                    <div class="flex items-center mb-4">
-                                        <img src="img/Wounded_Warrior_Project_logo.svg.png" alt="Wounded Warrior Project Logo" class="h-10 mr-4">
-                                        <h3 class="text-xl font-bold">Wounded Warrior Project</h3>
-                                    </div>
-                                    <p class="text-gray-600 mb-4">Supporting wounded veterans and families with custom blankets that reinforce unity and appreciation.</p>
-                                    <a href="projects/wounded-warrior.html" class="text-accent hover:underline">View Project <i class="fas fa-arrow-right ml-1"></i></a>
-                                </div>
-                            </div>
+                        <h1 class="hero-title">Ferrari Club of the Netherlands</h1>
+                        <h2 class="hero-subtitle">European Tour Collection</h2>
+                        <p class="hero-description">Uniting Ferrari enthusiasts with a bespoke keepsake for the annual European tour—luxury and excitement, woven together.</p>
+                        <div class="hero-buttons">
+                            <a href="ferrari.html" class="btn-refined-primary btn-hero">View Project</a>
+                            <a href="#portfolio" class="btn-refined hidden-on-mobile">Explore Designs</a>
                         </div>
-                        
-                        <!-- St. Andrews Golf Club -->
-                        <div class="featured-item">
-                            <div class="bg-white rounded-lg overflow-hidden shadow-lg">
-                                <div class="relative h-80 md:h-96">
-                                    <img src="img/St. Andrews-clubhouse.gif" alt="St. Andrews Golf Club" class="w-full h-full object-cover">
-                                </div>
-                                <div class="p-6">
-                                    <div class="flex items-center mb-4">
-                                        <img src="img/st-andrews-logo.svg" alt="St. Andrews Logo" class="h-10 mr-4">
-                                        <h3 class="text-xl font-bold">St. Andrews Golf Club</h3>
-                                    </div>
-                                    <p class="text-gray-600 mb-4">Celebrating the "Home of Golf" with custom anniversary blankets that embody tradition and excellence.</p>
-                                    <a href="projects/st-andrews.html" class="text-accent hover:underline">View Project <i class="fas fa-arrow-right ml-1"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        
-						
-						<!-- Greenwich Polo Club -->
-                        <div class="featured-item">
-                            <div class="bg-white rounded-lg overflow-hidden shadow-lg">
-                                <div class="relative h-80 md:h-96">
-                                    <img src="img/clubs/GreenwichPolo9.png" alt="Greenwich Polo Club Match" class="w-full h-full object-cover">
-                                </div>
-                                <div class="p-6">
-                                    <div class="flex items-center mb-4">
-                                        <img src="img/clubs/Greenwich Polo Club-Logo.png" alt="Greenwich Polo Club Logo" class="h-10 mr-4">
-                                        <h3 class="text-xl font-bold">Greenwich Polo Club</h3>
-                                    </div>
-                                    <p class="text-gray-600 mb-4">Prestigious polo club known for hosting world-class tournaments and events with custom branded blankets.</p>
-                                    <a href="projects/greenwich-polo.html" class="text-accent hover:underline">View Project <i class="fas fa-arrow-right ml-1"></i></a>
-                                </div>
-                            </div>
-                        </div>
-						
                     </div>
                 </div>
 
-                                        
-                <!-- Carousel Dots -->
-                <div class="carousel-nav" role="tablist">
-                    <!-- Dots will be generated by JavaScript -->
+                <!-- Greenwich Polo Slide -->
+                <div class="carousel-slide">
+                    <img src="assets/img/clubs/Greenwich Polo Game.png" alt="Greenwich Polo" class="hero-image">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+                        <div class="hero-logo">
+                            <img src="assets/img/clubs/Greenwich Polo Club-Logo.png" alt="Greenwich Polo Logo">
+                        </div>
+                        <h1 class="hero-title">Greenwich Polo Club</h1>
+                        <h2 class="hero-subtitle">Tournament Collection</h2>
+                        <p class="hero-description">Prestigious polo club known for hosting world-class tournaments and events with custom branded blankets.</p>
+                        <div class="hero-buttons">
+                            <a href="greenwich-polo.html" class="btn-refined-primary btn-hero">View Project</a>
+                            <a href="#portfolio" class="btn-refined hidden-on-mobile">Explore Designs</a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+            <!-- Navigation arrows -->
+            <button class="carousel-nav prev" id="prevBtn">‹</button>
+            <button class="carousel-nav next" id="nextBtn">›</button>
+
+            <!-- Dots indicator -->
+            <div class="carousel-dots" id="carouselDots">
+                <button class="carousel-dot active" data-slide="0"></button>
+                <button class="carousel-dot" data-slide="1"></button>
+                <button class="carousel-dot" data-slide="2"></button>
             </div>
         </div>
     </section>
-	
-	    <!-- How It Works Section -->
-    <section id="how-it-works" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">How It Works</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Our collaborative process ensures your custom blankets perfectly capture your brand's essence.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-			
-				
-			
-			
-			
-                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
-					<div class="w-20 h-20 bg-accent rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-6">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-					
-					
-					
-					
-                    <h3 class="text-2xl font-serif font-bold mb-4">Consultation</h3>
-                    <p class="text-gray-600">We begin with a detailed consultation to understand your brand, goals, and vision for your custom blankets.</p>
-                </div>
-                
-                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
-                    <div class="w-20 h-20 bg-accent rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-6">
-                        <i class="fas fa-pencil-alt"></i>
-                    </div>
-					<h3 class="text-2xl font-serif font-bold mb-4">Design</h3>
-                    <p class="text-gray-600">Our designers create custom concepts that align with your brand identity and meet your specific requirements.</p>
-                </div>
-                
-                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
-                    <div class="w-20 h-20 bg-accent rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-6">
-                        <i class="fas fa-gift"></i>
-                    </div>
-					<h3 class="text-2xl font-serif font-bold mb-4">Production</h3>
-                    <p class="text-gray-600">Once the design is approved, we craft your blankets using premium materials and meticulous attention to detail.</p>
-                </div>
-            </div>
-            
-            <div class="mt-16 text-center" data-aos="fade-up">
-                <a href="#contact" class="px-8 py-3 bg-accent text-white text-lg rounded-md hover:bg-opacity-90 transition-all duration-300 inline-block">Start Your Project</a>
+
+    <!-- Trusted By Section -->
+    <section class="section-padding bg-soft-cream">
+        <div class="container">
+            <h2 class="text-headline text-center">Trusted By</h2>
+            <div class="trusted-logos">
+                <img src="assets/img/clubs/fcn_logo_2022.png" alt="Ferrari Club">
+                <img src="assets/img/clubs/Greenwich Polo Club-Logo.png" alt="Greenwich Polo">
+                <img src="assets/img/st-andrews-logo.svg" alt="St. Andrews">
+                <img src="assets/img/charities/Wounded_Warrior_Project_logo.svg.png" alt="Wounded Warrior">
+                <img src="assets/img/notre dame logo.jpg" alt="Notre Dame">
+                <img src="assets/img/Alisal Brand Lockup Black FA.jpg" alt="Alisal Ranch">
             </div>
         </div>
-    </section>
-    
-    <!-- Portfolio Section -->
+    </section>		
+			
+			
+			
+            <!-- Portfolio Gallery -->
     <section id="portfolio" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Our Portfolio</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Explore our custom blanket projects for prestigious organizations across various industries..</p>
+                <h2 class="text-3xl md:text-4xl font-serif mb-4">Some of Our Inspirations</h2>
+                <p class="text-body-large text-gray-500 max-w-3xl mx-auto">Explore our custom blanket projects for prestigious organizations across various industries.</p>
             </div>
             
             <!-- Portfolio Filter -->
+			<!--
             <div class="flex flex-wrap justify-center gap-4 mb-12" data-aos="fade-up">
                 <button class="filter-btn px-6 py-2 rounded bg-accent text-white hover:bg-opacity-90 transition-all duration-300" data-filter="all">All Projects</button>
                 <button class="filter-btn px-6 py-2 rounded bg-gray-200 text-gray-700 hover:bg-gray-300 transition-all duration-300" data-filter="clubs">Clubs</button>
                 <button class="filter-btn px-6 py-2 rounded bg-gray-200 text-gray-700 hover:bg-gray-300 transition-all duration-300" data-filter="hospitality">Hospitality</button>
                 <button class="filter-btn px-6 py-2 rounded bg-gray-200 text-gray-700 hover:bg-gray-300 transition-all duration-300" data-filter="universities">Universities</button>
                 <button class="filter-btn px-6 py-2 rounded bg-gray-200 text-gray-700 hover:bg-gray-300 transition-all duration-300" data-filter="charities">Charities</button>
-            </div>
-            
-            <!-- Portfolio Gallery -->
+            </div>		
+				-->
 			
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Ferrari Club of the Netherlands -->
-                <div class="gallery-item rounded-lg overflow-hidden shadow-lg" data-category="clubs" data-aos="fade-up" data-aos-delay="100">
+                <div class="gallery-item overflow-hidden shadow-lg" data-category="clubs" data-aos="fade-up" data-aos-delay="100">
                     <div class="relative h-80">
-                        <img src="img/clubs/Ferrari of Netherlands blanket.jpeg" alt="Ferrari Club of the Netherlands Blanket" class="w-full h-full object-cover">
+                        <img src="assets/img/clubs/Ferrari of Netherlands blanket.png" alt="Ferrari Club of the Netherlands Blanket" class="w-full h-full object-cover">
                         <div class="gallery-overlay">
                             <div class="flex items-center mb-2">
-                                <img src="img/clubs/fcn_logo_2022.png" alt="Ferrari Club Logo" class="h-8 mr-3">
+                                <img src="assets/img/clubs/fcn_logo_2022.png" alt="Ferrari Club Logo" class="h-8 mr-3">
                                 <h3 class="text-lg font-bold">Ferrari Club of the Netherlands</h3>
                             </div>
                             <p class="text-sm text-gray-200">Uniting Ferrari enthusiasts with a bespoke keepsake for the annual European tour.</p>
-                            <a href="projects/ferrari.html" class="mt-4 inline-block text-white hover:text-accent transition-colors">View Project <i class="fas fa-arrow-right ml-1"></i></a>
+                            <a href="ferrari.html" class="mt-4 inline-block text-white hover:text-accent transition-colors">View Project <i class="fas fa-arrow-right ml-1"></i></a>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Greenwich Polo Club -->
-                <div class="gallery-item rounded-lg overflow-hidden shadow-lg" data-category="clubs" data-aos="fade-up" data-aos-delay="200">
+                <div class="gallery-item overflow-hidden shadow-lg" data-category="clubs" data-aos="fade-up" data-aos-delay="200">
                     <div class="relative h-80">
-                        <img src="img/clubs/Greenwich Polo Picnic.png" alt="Greenwich Polo Club Picnic" class="w-full h-full object-cover">
+                        <img src="assets/img/clubs/Greenwich Polo Picnic.png" alt="Greenwich Polo Club Picnic" class="w-full h-full object-cover">
                         <div class="gallery-overlay">
                             <div class="flex items-center mb-2">
-                                <img src="img/clubs/Greenwich Polo Club-Logo.png" alt="Greenwich Polo Club Logo" class="h-8 mr-3">
+                                <img src="assets/img/clubs/Greenwich Polo Club-Logo.png" alt="Greenwich Polo Club Logo" class="h-8 mr-3">
                                 <h3 class="text-lg font-bold">Greenwich Polo Club</h3>
                             </div>
                             <p class="text-sm text-gray-200">Prestigious polo club known for hosting world-class tournaments and events.</p>
-                            <a href="projects/greenwich-polo.html" class="mt-4 inline-block text-white hover:text-accent transition-colors">View Project <i class="fas fa-arrow-right ml-1"></i></a>
+                            <a href="greenwich-polo.html" class="mt-4 inline-block text-white hover:text-accent transition-colors">View Project <i class="fas fa-arrow-right ml-1"></i></a>
                         </div>
                     </div>
                 </div>
                 
                 <!-- St. Andrews Golf Club -->
-                <div class="gallery-item rounded-lg overflow-hidden shadow-lg" data-category="clubs" data-aos="fade-up" data-aos-delay="300">
+                <div class="gallery-item overflow-hidden shadow-lg" data-category="clubs" data-aos="fade-up" data-aos-delay="300">
                     <div class="relative h-80">
-                        <img src="img/St. Andrews-clubhouse.gif" alt="St. Andrews Golf Club" class="w-full h-full object-cover">
+                        <img src="assets/img/St. Andrews-clubhouse.gif" alt="St. Andrews Golf Club" class="w-full h-full object-cover">
                         <div class="gallery-overlay">
                             <div class="flex items-center mb-2">
-                                <img src="img/st-andrews-logo.svg" alt="St. Andrews Logo" class="h-8 mr-3 bg-white p-1 rounded">
+                                <img src="assets/img/st-andrews-logo.svg" alt="St. Andrews Logo" class="h-8 mr-3 bg-white p-1 rounded">
                                 <h3 class="text-lg font-bold">St. Andrews Golf Club</h3>
                             </div>
                             <p class="text-sm text-gray-200">Celebrated as the "Home of Golf," embodying tradition and excellence.</p>
-                            <a href="projects/st-andrews.html" class="mt-4 inline-block text-white hover:text-accent transition-colors">View Project <i class="fas fa-arrow-right ml-1"></i></a>
+                            <a href="st-andrews.html" class="mt-4 inline-block text-white hover:text-accent transition-colors">View Project <i class="fas fa-arrow-right ml-1"></i></a>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Alisal Ranch -->
-                <div class="gallery-item rounded-lg overflow-hidden shadow-lg" data-category="hospitality" data-aos="fade-up" data-aos-delay="100">
+                <div class="gallery-item overflow-hidden shadow-lg" data-category="hospitality" data-aos="fade-up" data-aos-delay="100">
                     <div class="relative h-80">
-                        <img src="img/hospitality/Alisal AI pic.png" alt="Alisal Ranch Blanket" class="w-full h-full object-cover">
+                        <img src="assets/img/hospitality/Alisal AI pic.png" alt="Alisal Ranch Blanket" class="w-full h-full object-cover">
                         <div class="gallery-overlay">
                             <div class="flex items-center mb-2">
-                                <img src="img/Alisal Brand Lockup Black FA.jpg" alt="Alisal Ranch Logo" class="h-8 mr-3 bg-white p-1 rounded">
+                                <img src="assets/img/Alisal Brand Lockup Black FA.jpg" alt="Alisal Ranch Logo" class="h-8 mr-3 bg-white p-1 rounded">
                                 <h3 class="text-lg font-bold">Alisal Ranch</h3>
                             </div>
                             <p class="text-sm text-gray-200">Luxury guest ranch and resort in California's Santa Ynez Valley.</p>
-                            <a href="projects/alisal-ranch.html" class="mt-4 inline-block text-white hover:text-accent transition-colors">View Project <i class="fas fa-arrow-right ml-1"></i></a>
+                            <a href="alisal-ranch.html" class="mt-4 inline-block text-white hover:text-accent transition-colors">View Project <i class="fas fa-arrow-right ml-1"></i></a>
                         </div>
                     </div>
                 </div>
                 <!-- White Stallion Ranch -->
-                <div class="gallery-item rounded-lg overflow-hidden shadow-lg" data-category="hospitality" data-aos="fade-up" data-aos-delay="100">
+                <div class="gallery-item overflow-hidden shadow-lg" data-category="hospitality" data-aos="fade-up" data-aos-delay="100">
                     <div class="relative h-80">
-                        <img src="img/hospitality/White Stallion-blanket pattern.png" alt="White Stallion Ranch Blanket" class="w-full h-full object-cover">
+                        <img src="assets/img/hospitality/White Stallion-blanket pattern.png" alt="White Stallion Ranch Blanket" class="w-full h-full object-cover">
                         <div class="gallery-overlay">
                             <div class="flex items-center mb-2">
-                                <img src="img/hospitality/WhiteStallionLogo.png" alt="White Stallion Ranch Logo" class="h-8 mr-3 bg-white p-1 rounded">
+                                <img src="assets/img/hospitality/WhiteStallionLogo.png" alt="White Stallion Ranch Logo" class="h-8 mr-3 bg-white p-1 rounded">
                                 <h3 class="text-lg font-bold">White Stallion Ranch</h3>
                             </div>
                             <p class="text-sm text-gray-200">Family-owned dude ranch in Arizona, famous for authentic Western hospitality.</p>
-                            <a href="projects/white-stallion-ranch.html" class="mt-4 inline-block text-white hover:text-accent transition-colors">View Project <i class="fas fa-arrow-right ml-1"></i></a>
+                            <a href="white-stallion-ranch.html" class="mt-4 inline-block text-white hover:text-accent transition-colors">View Project <i class="fas fa-arrow-right ml-1"></i></a>
                         </div>
                     </div>
-                </div>				
-                 <!-- Hotel Hershey -->
-                <div class="gallery-item rounded-lg overflow-hidden shadow-lg" data-category="hospitality" data-aos="fade-up" data-aos-delay="100">
+                </div>		
+
+                <!-- Wounded Warrior Project -->
+                <div class="gallery-item overflow-hidden shadow-lg" data-category="charities" data-aos="fade-up" data-aos-delay="100">
                     <div class="relative h-80">
-                        <img src="img/hospitality/Hershey Hotel-blanket pattern.png" alt="Hotel Hershey Blanket" class="w-full h-full object-cover">
+                        <img src="assets/img/charities/Wounded Warrior Blanket Displayed.png" alt="Wounded Warrior Project Blanket" class="w-full h-full object-cover">
                         <div class="gallery-overlay">
                             <div class="flex items-center mb-2">
-                                <img src="img/hospitality/HotelHershey logo.png" alt="Hotel Hershey Logo" class="h-8 mr-3 bg-white p-1 rounded">
+                                <img src="assets/img/charities/Wounded_Warrior_Project_logo.svg.png" alt="Wounded Warrior Project Logo" class="h-8 mr-3 bg-white p-1 rounded">
+                                <h3 class="text-lg font-bold">Wounded Warrior Project</h3>
+                            </div>
+                            <p class="text-sm text-gray-200">Leading nonprofit supporting wounded veterans and families.</p>
+                            <a href="wounded-warrior.html" class="mt-4 inline-block text-white hover:text-accent transition-colors">View Project <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+				
+                 <!-- Hotel Hershey -->
+                <div class="gallery-item overflow-hidden shadow-lg" data-category="hospitality" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative h-80">
+                        <img src="assets/img/hospitality/Hershey Hotel-blanket pattern.png" alt="Hotel Hershey Blanket" class="w-full h-full object-cover">
+                        <div class="gallery-overlay">
+                            <div class="flex items-center mb-2">
+                                <img src="assets/img/hospitality/HotelHershey logo.png" alt="Hotel Hershey Logo" class="h-8 mr-3 bg-white p-1 rounded">
                                 <h3 class="text-lg font-bold">Hotel Hershey</h3>
                             </div>
                             <p class="text-sm text-gray-200">Historic luxury resort in Pennsylvania, famous for its "Chocolate Spa."</p>
-                            <a href="projects/hotel-hershey.html" class="mt-4 inline-block text-white hover:text-accent transition-colors">View Project <i class="fas fa-arrow-right ml-1"></i></a>
+                            <a href="hotel-hershey.html" class="mt-4 inline-block text-white hover:text-accent transition-colors">View Project <i class="fas fa-arrow-right ml-1"></i></a>
                         </div>
                     </div>
                 </div>		               
                 <!-- Notre Dame University -->
-                <div class="gallery-item rounded-lg overflow-hidden shadow-lg" data-category="universities" data-aos="fade-up" data-aos-delay="200">
+                <div class="gallery-item overflow-hidden shadow-lg" data-category="universities" data-aos="fade-up" data-aos-delay="200">
                     <div class="relative h-80">
-                        <img src="img/universities/Mendoza Business School.png" alt="Notre Dame University Blanket" class="w-full h-full object-cover">
+                        <img src="assets/img/universities/notre dame.png" alt="Notre Dame University Blanket" class="w-full h-full object-cover">
                         <div class="gallery-overlay">
                             <div class="flex items-center mb-2">
-                                <img src="img/notre dame logo.jpg" alt="Notre Dame Logo" class="h-8 mr-3">
+                                <img src="assets/img/notre dame logo.jpg" alt="Notre Dame Logo" class="h-8 mr-3">
                                 <h3 class="text-lg font-bold">University of Notre Dame</h3>
                             </div>
                             <p class="text-sm text-gray-200">Leading Catholic research university, known for excellence in academics and athletics.</p>
-                            <a href="projects/notre-dame.html" class="mt-4 inline-block text-white hover:text-accent transition-colors">View Project <i class="fas fa-arrow-right ml-1"></i></a>
+                            <a href="notre-dame.html" class="mt-4 inline-block text-white hover:text-accent transition-colors">View Project <i class="fas fa-arrow-right ml-1"></i></a>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Manhattanville College -->
-                <div class="gallery-item rounded-lg overflow-hidden shadow-lg" data-category="universities" data-aos="fade-up" data-aos-delay="300">
+                <div class="gallery-item overflow-hidden shadow-lg" data-category="universities" data-aos="fade-up" data-aos-delay="300">
                     <div class="relative h-80">
-                        <img src="img/universities/Manhattanville blanket.png" alt="Manhattanville College Blanket" class="w-full h-full object-cover">
+                        <img src="assets/img/universities/Manhattanville blanket.png" alt="Manhattanville College Blanket" class="w-full h-full object-cover">
                         <div class="gallery-overlay">
                             <div class="flex items-center mb-2">
-                                <img src="img/universities/Manhattanville logo.jpg" alt="Manhattanville Logo" class="h-8 mr-3">
+                                <img src="assets/img/universities/Manhattanville logo.jpg" alt="Manhattanville Logo" class="h-8 mr-3">
                                 <h3 class="text-lg font-bold">Manhattanville College</h3>
                             </div>
                             <p class="text-sm text-gray-200">Private liberal arts institution in New York, committed to global citizenship.</p>
-                            <a href="projects/manhattanville.html" class="mt-4 inline-block text-white hover:text-accent transition-colors">View Project <i class="fas fa-arrow-right ml-1"></i></a>
+                            <a href="manhattanville.html" class="mt-4 inline-block text-white hover:text-accent transition-colors">View Project <i class="fas fa-arrow-right ml-1"></i></a>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Wounded Warrior Project -->
-                <div class="gallery-item rounded-lg overflow-hidden shadow-lg" data-category="charities" data-aos="fade-up" data-aos-delay="100">
-                    <div class="relative h-80">
-                        <img src="img/Wounded Warrior Blanket Displayed.png" alt="Wounded Warrior Project Blanket" class="w-full h-full object-cover">
-                        <div class="gallery-overlay">
-                            <div class="flex items-center mb-2">
-                                <img src="img/Wounded_Warrior_Project_logo.svg.png" alt="Wounded Warrior Project Logo" class="h-8 mr-3 bg-white p-1 rounded">
-                                <h3 class="text-lg font-bold">Wounded Warrior Project</h3>
-                            </div>
-                            <p class="text-sm text-gray-200">Leading nonprofit supporting wounded veterans and families.</p>
-                            <a href="projects/wounded-warrior.html" class="mt-4 inline-block text-white hover:text-accent transition-colors">View Project <i class="fas fa-arrow-right ml-1"></i></a>
-                        </div>
-                    </div>
-                </div>
+<!-- 
                 
-                <!-- Medicine For All People -->
-                <div class="gallery-item rounded-lg overflow-hidden shadow-lg" data-category="charities" data-aos="fade-up" data-aos-delay="200">
+                <-- Medicine For All People --
+                <div class="gallery-item overflow-hidden shadow-lg" data-category="charities" data-aos="fade-up" data-aos-delay="200">
                     <div class="relative h-80">
-                        <img src="img/Medicine for All People.jpeg" alt="Medicine For All People Blanket" class="w-full h-full object-cover">
+                        <img src="assets/img/Medicine for All People.jpeg" alt="Medicine For All People Blanket" class="w-full h-full object-cover">
                         <div class="gallery-overlay">
                             <div class="flex items-center mb-2">
-                                <img src="img/charities/medicine for all people logo.png" alt="Medicine For All People Logo" class="h-8 mr-3 bg-white p-1 rounded">
+                                <img src="assets/img/charities/medicine for all people logo.png" alt="Medicine For All People Logo" class="h-8 mr-3 bg-white p-1 rounded">
                                 <h3 class="text-lg font-bold">Medicine For All People</h3>
                             </div>
                             <p class="text-sm text-gray-200">Charity dedicated to providing medical care globally.</p>
@@ -569,13 +355,13 @@
                     </div>
                 </div>
                 
-                <!-- Tunnel to Towers -->
-                <div class="gallery-item rounded-lg overflow-hidden shadow-lg" data-category="charities" data-aos="fade-up" data-aos-delay="300">
+                <-- Tunnel to Towers --
+                <div class="gallery-item overflow-hidden shadow-lg" data-category="charities" data-aos="fade-up" data-aos-delay="300">
                     <div class="relative h-80">
-                        <img src="img/Tunnel2Towers-Blanket pattern.png" alt="Tunnel to Towers Blanket" class="w-full h-full object-cover">
+                        <img src="assets/img/Tunnel2Towers-Blanket pattern.png" alt="Tunnel to Towers Blanket" class="w-full h-full object-cover">
                         <div class="gallery-overlay">
                             <div class="flex items-center mb-2">
-                                <img src="img/Tunnel2Towers-Logo.webp" alt="Tunnel to Towers Logo" class="h-8 mr-3 bg-white p-1 rounded">
+                                <img src="assets/img/Tunnel2Towers-Logo.webp" alt="Tunnel to Towers Logo" class="h-8 mr-3 bg-white p-1 rounded">
                                 <h3 class="text-lg font-bold">Tunnel to Towers Foundation</h3>
                             </div>
                             <p class="text-sm text-gray-200">National nonprofit supporting first responders and military families.</p>
@@ -584,13 +370,13 @@
                     </div>
                 </div>
                 
-                <!-- The Nature Conservancy -->
-                <div class="gallery-item rounded-lg overflow-hidden shadow-lg" data-category="charities" data-aos="fade-up" data-aos-delay="400">
+                <-- The Nature Conservancy --
+                <div class="gallery-item overflow-hidden shadow-lg" data-category="charities" data-aos="fade-up" data-aos-delay="400">
                     <div class="relative h-80">
-                        <img src="img/charities/Nature-C-logo.jpeg" alt="The Nature Conservancy Forests" class="w-full h-full object-cover">
+                        <img src="assets/img/charities/Nature-C-logo.jpeg" alt="The Nature Conservancy Forests" class="w-full h-full object-cover">
                         <div class="gallery-overlay">
                             <div class="flex items-center mb-2">
-                                <img src="img/charities/TNC logo.png" alt="The Nature Conservancy Logo" class="h-8 mr-3 bg-white p-1 rounded">
+                                <img src="assets/img/charities/TNC logo.png" alt="The Nature Conservancy Logo" class="h-8 mr-3 bg-white p-1 rounded">
                                 <h3 class="text-lg font-bold">The Nature Conservancy</h3>
                             </div>
                             <p class="text-sm text-gray-200">Global leader in environmental conservation.</p>
@@ -598,436 +384,74 @@
                         </div>
                     </div>
                 </div>
+				-->
             </div>
         </div>
     </section>
-    
-    <!-- Testimonials Section -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">What Our Clients Say</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Hear from organizations that have experienced the impact of our custom blankets.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
-                    <div class="text-accent text-4xl mb-4">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <p class="text-gray-700 mb-6">"The custom blankets created for our club members exceeded our expectations. The attention to detail and quality craftsmanship perfectly captured the essence of our brand and created a memorable keepsake for our European tour."</p>
-                    <div class="flex items-center">
-                        <img src="img/clubs/fcn_logo_2022.png" alt="Ferrari Club Logo" class="h-10 mr-4">
-                        <div>
-                            <h4 class="font-bold">Ferrari Club of the Netherlands</h4>
-                            <p class="text-sm text-gray-500">Club President</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-gray-50 p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
-                    <div class="text-accent text-4xl mb-4">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <p class="text-gray-700 mb-6">"These blankets have become an integral part of our donor recognition program. They beautifully represent our mission and have helped strengthen our connection with supporters who are making a difference in the lives of wounded veterans."</p>
-                    <div class="flex items-center">
-                        <img src="img/Wounded_Warrior_Project_logo.svg.png" alt="Wounded Warrior Project Logo" class="h-10 mr-4">
-                        <div>
-                            <h4 class="font-bold">Wounded Warrior Project</h4>
-                            <p class="text-sm text-gray-500">Development Director</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="bg-gray-50 p-8 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="300">
-                    <div class="text-accent text-4xl mb-4">
-                        <i class="fas fa-quote-left"></i>
-                    </div>
-                    <p class="text-gray-700 mb-6">"The custom blankets have become a cherished part of our guest experience. They perfectly capture our blend of rustic luxury and Western heritage, and have become one of our most popular retail items."</p>
-                    <div class="flex items-center">
-                        <img src="img/Alisal Brand Lockup Black FA.jpg" alt="Alisal Ranch Logo" class="h-10 mr-4">
-                        <div>
-                            <h4 class="font-bold">Alisal Ranch</h4>
-                            <p class="text-sm text-gray-500">Hospitality Director</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+	
+	
         </div>
-    </section>
-    
+    </section>	
+	
 
-    
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div data-aos="fade-right">
-                    <img src="img/How it works.png" alt="About Ecuadane Luxury Blankets" class="rounded-lg shadow-lg w-full">
-                </div>
-                
-                <div data-aos="fade-left">
-                    <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">About Ecuadane</h2>
-                    <p class="text-lg text-gray-700 mb-6">Ecuadane specializes in creating custom-designed luxury blankets that tell your organization's story and create lasting impressions.</p>
-                    <p class="text-lg text-gray-700 mb-6">Our journey began with a passion for craftsmanship and a belief that the finest materials, combined with thoughtful design, can create meaningful connections between organizations and their stakeholders.</p>
-                    <p class="text-lg text-gray-700 mb-6">Today, we work with prestigious clubs, luxury hospitality brands, universities, and nonprofits to create custom blankets that serve as both practical amenities and cherished keepsakes.</p>
-                    
-                </div>
-            </div>
+    <!-- Let Us Weave Your Story -->
+    <section class="section-padding bg-soft-cream">
+        <div class="container text-center">
+            <h2 class="text-headline">Let Us Weave Your Story</h2>
+            <p class="text-body-large">Ready to create custom blankets that perfectly represent your organization's values and heritage?</p>
+            <a href="customization.html" class="btn-refined-primary">Start Your Project</a>
         </div>
     </section>
-    
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Let Us Weave Your Story</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Ready to create something extraordinary? Tell us your vision, and we'll bring it to life.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div data-aos="fade-right">
-                    <form class="space-y-6">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label for="name" class="block text-gray-700 mb-2">Name</label>
-                                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent">
-                            </div>
-                            <div>
-                                <label for="email" class="block text-gray-700 mb-2">Email</label>
-                                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent">
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <label for="organization" class="block text-gray-700 mb-2">Organization</label>
-                            <input type="text" id="organization" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent">
-                        </div>
-                        
-                        <div>
-                            <label for="message" class="block text-gray-700 mb-2">Message</label>
-                            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="px-8 py-3 bg-accent text-white text-lg rounded-md hover:bg-opacity-90 transition-all duration-300">Send Message</button>
-                    </form>
-                </div>
-                
-                <div data-aos="fade-left">
-                    <div class="bg-white p-8 rounded-lg shadow-md">
-                        <h3 class="text-2xl font-serif font-bold mb-6">Contact Information</h3>
-                        
-                        <div class="space-y-4">
-                            <div class="flex items-start">
-                                <div class="text-accent text-xl mt-1 mr-4"><i class="fas fa-map-marker-alt"></i></div>
-                                <div>
-                                    <h4 class="font-bold mb-1">Address</h4>
-                                    <p class="text-gray-600">123 Luxury Lane, Suite 100<br>New York, NY 10001</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <div class="text-accent text-xl mt-1 mr-4"><i class="fas fa-phone"></i></div>
-                                <div>
-                                    <h4 class="font-bold mb-1">Phone</h4>
-                                    <p class="text-gray-600">(800) 123-4567</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <div class="text-accent text-xl mt-1 mr-4"><i class="fas fa-envelope"></i></div>
-                                <div>
-                                    <h4 class="font-bold mb-1">Email</h4>
-                                    <p class="text-gray-600">info@ecuadaneluxury.com</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <div class="text-accent text-xl mt-1 mr-4"><i class="fas fa-clock"></i></div>
-                                <div>
-                                    <h4 class="font-bold mb-1">Hours</h4>
-                                    <p class="text-gray-600">Monday - Friday: 9am - 5pm EST<br>Saturday - Sunday: Closed</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="mt-8">
-                            <h4 class="font-bold mb-4">Follow Us</h4>
-                            <div class="flex space-x-4">
-                                <a href="#" class="text-accent hover:text-primary transition-colors duration-300 text-2xl"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="text-accent hover:text-primary transition-colors duration-300 text-2xl"><i class="fab fa-facebook"></i></a>
-                                <a href="#" class="text-accent hover:text-primary transition-colors duration-300 text-2xl"><i class="fab fa-linkedin"></i></a>
-                                <a href="#" class="text-accent hover:text-primary transition-colors duration-300 text-2xl"><i class="fab fa-pinterest"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
+
     <!-- Footer -->
-    <footer class="bg-primary text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-xl font-serif font-bold mb-4">Ecuadane Luxury Blankets</h3>
-                    <p class="text-gray-300 mb-4">Crafting luxury branded experiences through custom-designed blankets.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-white hover:text-accent transition-colors"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white hover:text-accent transition-colors"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-white hover:text-accent transition-colors"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="text-white hover:text-accent transition-colors"><i class="fab fa-pinterest"></i></a>
-                    </div>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
-                        <li><a href="#portfolio" class="text-gray-300 hover:text-white transition-colors">Portfolio</a></li>
-                        <li><a href="#how-it-works" class="text-gray-300 hover:text-white transition-colors">How It Works</a></li>
-                        <li><a href="#about" class="text-gray-300 hover:text-white transition-colors">About</a></li>
-                        <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Industries</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Luxury Clubs</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Hospitality</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Universities</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Nonprofits</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Corporate Gifts</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-bold mb-4">Contact</h4>
-                    <ul class="space-y-2">
-                        <li class="flex items-start">
-                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
-                            <span>123 Luxury Lane, Suite 100<br>New York, NY 10001</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-phone mr-3"></i>
-                            <span>(800) 123-4567</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-envelope mr-3"></i>
-                            <span>info@ecuadaneluxury.com</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2025 Ecuadane Luxury Blankets. All rights reserved.</p>
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ecuadane Artisan Designs. All rights reserved.</p>
             </div>
         </div>
     </footer>
-    
-    <!-- Inline Carousel JavaScript -->
-    <script>
-        // Initialize AOS animations
-        document.addEventListener('DOMContentLoaded', function() {
-            AOS.init();
-            
-            // Mobile Menu Toggle
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const closeMobileMenu = document.getElementById('close-mobile-menu');
-            const mobileMenu = document.getElementById('mobile-menu');
-            
-            mobileMenuButton.addEventListener('click', function() {
-                mobileMenu.classList.add('active');
-                mobileMenu.style.transform = 'translateX(0)';
-            });
-            
-            closeMobileMenu.addEventListener('click', function() {
-                mobileMenu.classList.remove('active');
-                mobileMenu.style.transform = 'translateX(-100%)';
-            });
-            
-            // Navbar Scroll Effect
-            const navbar = document.getElementById('navbar');
-            
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 50) {
-                    navbar.classList.add('scrolled');
-                    navbar.style.padding = '0.5rem 0';
-                    navbar.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
-                } else {
-                    navbar.classList.remove('scrolled');
-                    navbar.style.padding = '1rem 0';
-                    navbar.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.05)';
-                }
-            });
-            
-            // Portfolio Filter
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            const galleryItems = document.querySelectorAll('.gallery-item');
-            
-            filterButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // Remove active class from all buttons
-                    filterButtons.forEach(btn => {
-                        btn.classList.remove('bg-accent', 'text-white');
-                        btn.classList.add('bg-gray-200', 'text-gray-700');
-                    });
-                    
-                    // Add active class to clicked button
-                    this.classList.remove('bg-gray-200', 'text-gray-700');
-                    this.classList.add('bg-accent', 'text-white');
-                    
-                    const filter = this.getAttribute('data-filter');
-                    
-                    galleryItems.forEach(item => {
-                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
-                            item.style.display = 'block';
-                        } else {
-                            item.style.display = 'none';
-                        }
-                    });
-                });
-            });
-            
-            // Initialize Carousel
-            initCarousel();
-        });
-        
-        // Carousel Functionality
-        function initCarousel() {
-            const track = document.getElementById('featured-track');
-            const slides = Array.from(track.children);
-            const nextButton = document.querySelector('.carousel-button.next');
-            const prevButton = document.querySelector('.carousel-button.prev');
-            const dotsNav = document.querySelector('.carousel-nav');
-            
-            // Create carousel dots
-            slides.forEach((_, index) => {
-                const dot = document.createElement('button');
-                dot.classList.add('carousel-dot');
-                dot.setAttribute('aria-label', `Slide ${index + 1}`);
-                
-                if (index === 0) {
-                    dot.classList.add('active');
-                }
-                
-                dotsNav.appendChild(dot);
-            });
-            
-            const dots = Array.from(dotsNav.children);
-            
-            // Set first slide as active
-            slides[0].classList.add('active');
-            
-            // Function to move to target slide
-            const moveToSlide = (currentIndex, targetIndex) => {
-                // Calculate the slide width dynamically
-                const slideWidth = slides[0].getBoundingClientRect().width;
-                
-                // Move the track
-                track.style.transform = `translateX(-${targetIndex * slideWidth}px)`;
-                
-                // Update active class on slides
-                slides[currentIndex].classList.remove('active');
-                slides[targetIndex].classList.add('active');
-                
-                // Update dots
-                dots[currentIndex].classList.remove('active');
-                dots[targetIndex].classList.add('active');
-            };
-            
-            // Next button click handler
-            nextButton.addEventListener('click', () => {
-                const currentSlide = track.querySelector('.active');
-                const currentIndex = slides.findIndex(slide => slide === currentSlide);
-                const nextIndex = (currentIndex + 1) % slides.length;
-                
-                moveToSlide(currentIndex, nextIndex);
-            });
-            
-            // Previous button click handler
-            prevButton.addEventListener('click', () => {
-                const currentSlide = track.querySelector('.active');
-                const currentIndex = slides.findIndex(slide => slide === currentSlide);
-                const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
-                
-                moveToSlide(currentIndex, prevIndex);
-            });
-            
-            // Dot click handler
-            dotsNav.addEventListener('click', e => {
-                const targetDot = e.target.closest('button');
-                
-                if (!targetDot) return;
-                
-                const currentSlide = track.querySelector('.active');
-                const currentIndex = slides.findIndex(slide => slide === currentSlide);
-                const targetIndex = dots.findIndex(dot => dot === targetDot);
-                
-                moveToSlide(currentIndex, targetIndex);
-            });
-            
-            // Auto-advance carousel
-            let carouselInterval = setInterval(() => {
-                const currentSlide = track.querySelector('.active');
-                const currentIndex = slides.findIndex(slide => slide === currentSlide);
-                const nextIndex = (currentIndex + 1) % slides.length;
-                
-                moveToSlide(currentIndex, nextIndex);
-            }, 5000);
-            
-            // Pause auto-advance on hover
-            const carouselContainer = document.querySelector('.featured-carousel');
-            
-            carouselContainer.addEventListener('mouseenter', () => {
-                clearInterval(carouselInterval);
-            });
-            
-            carouselContainer.addEventListener('mouseleave', () => {
-                carouselInterval = setInterval(() => {
-                    const currentSlide = track.querySelector('.active');
-                    const currentIndex = slides.findIndex(slide => slide === currentSlide);
-                    const nextIndex = (currentIndex + 1) % slides.length;
-                    
-                    moveToSlide(currentIndex, nextIndex);
-                }, 5000);
-            });
-            
-            // Keyboard navigation
-            document.addEventListener('keydown', e => {
-                if (e.key === 'ArrowLeft') {
-                    prevButton.click();
-                } else if (e.key === 'ArrowRight') {
-                    nextButton.click();
-                }
-            });
-            
-            // Touch swipe functionality
-            let touchStartX = 0;
-            let touchEndX = 0;
-            
-            carouselContainer.addEventListener('touchstart', e => {
-                touchStartX = e.changedTouches[0].screenX;
-            }, false);
-            
-            carouselContainer.addEventListener('touchend', e => {
-                touchEndX = e.changedTouches[0].screenX;
-                handleSwipe();
-            }, false);
-            
-            function handleSwipe() {
-                if (touchEndX < touchStartX) {
-                    // Swipe left, go to next slide
-                    nextButton.click();
-                } else if (touchEndX > touchStartX) {
-                    // Swipe right, go to previous slide
-                    prevButton.click();
-                }
-            }
-        }
-    </script>
+
+ <script>
+  AOS.init({
+    once: true,        // animate only the first time they scroll into view
+    duration: 600      // ms; adjust to taste
+  });
+</script>
+<script src="script.js"></script>
+<script>
+  const btn   = document.getElementById('menu-toggle');
+  const menu  = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+</script>
+
+
+
+<script>
+/* ── Make whole gallery-item clickable ─────────────────────── */
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    const link = item.querySelector('a[href]');        // the existing “View Project” link
+    if (!link) return;                                 // skip if no link inside
+
+    item.style.cursor = 'pointer';                     // give visual cue
+
+    item.addEventListener('click', e => {
+      /* If the actual click was on a real <a>, let its default behaviour run.
+         Otherwise send the user to the same URL. */
+      let n = e.target;
+      while (n && n !== item) {
+        if (n.tagName === 'A') return;                 // already on a link – do nothing
+        n = n.parentElement;
+      }
+      window.location = link.href;                     // navigate
+    });
+  });
+});
+</script>
+
 </body>
 </html>
+

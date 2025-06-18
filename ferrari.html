@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari Club Project | Ecuadane Artisan Designs</title>
+ 
+   
+	    <!-- Tailwind CSS -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2c3e50',
+                        secondary: '#34495e',
+                        accent: '#c0392b',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+	
+	
+	<!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles2.css">
+	<link rel="stylesheet" href="tailwind-overrides.css">
+	<!-- parallax -->
+	<link rel="stylesheet" href="parallax.css">
+	<style>
+		.parallax1 {background-image: url("assets/img/clubs/Ferrari7.png");}
+		.parallax2 {background-image: url("assets/img/clubs/Ferrari-Netherlands-horiz.png");}
+	</style>
+	
+	<!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	
+</head>
+
+<body class="font-sans text-gray-800 bg-gray-50">
+
+	<!-- Navigation -->
+	<nav class="nav-container bg-white shadow-lg">
+	  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="flex justify-between h-16 items-center">
+
+		  <!-- ① Brand / logo -->
+		  <a href="index.html" class="flex items-center">
+			<img src="assets/img/Ecuadane Logo-sm.png" alt="Brand" class="h-12 w-auto">
+		  </a>
+
+		  <!-- ② Desktop links -->
+		  <ul class="hidden md:flex space-x-8 font-medium">
+			<li><a href="index.html#portfolio" class="hover:text-primary">Portfolio</a></li>
+			<li><a href="customization.html" class="hover:text-primary">How it Works</a></li>
+			<li><a href="https://www.ecuadane.com/" class="hover:text-primary">Private Collection</a></li>
+			<li><a href="about_us.html" class="hover:text-primary">About Us</a></li>
+		  </ul>
+
+		  <!-- ③ Hamburger button (md:hidden keeps it mobile-only) -->
+		  <button id="menu-toggle"
+				  class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-primary">
+			<!-- Icon from Heroicons -->
+			<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+				 fill="none" viewBox="0 0 24 24" stroke="currentColor">
+			  <path stroke-linecap="round" stroke-linejoin="round"
+					stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+			</svg>
+		  </button>
+		</div>
+	  </div>
+
+	  <!-- ④ Mobile slide-down menu -->
+	  <ul id="mobile-menu"
+		  class="md:hidden hidden px-4 pb-4 space-y-2 font-medium">
+		<li><a href="index.html" class="block py-2 border-b">Home</a></li>
+		<li><a href="index.html#portfolio" class="block py-2 border-b">Portfolio</a></li>
+		<li><a href="customization.html" class="block py-2 border-b">How it Works</a></li>
+		<li><a href="https://www.ecuadane.com/" class="block py-2 border-b">Private Collection</a></li>
+		<li><a href="about_us.html"   class="block py-2">Contact</a></li>
+	  </ul>
+	</nav>
+	 <!-- END NAVIGATION -->    
+	
+
+    <!-- Project Header -->
+    <section class="pt-32 pb-12 bg-white">
+        <div class="container mx-auto px-4">          
+            <div class="flex flex-col md:flex-row items-center mb-12">
+                <img src="assets/img/clubs/fcn_logo_2022.png" alt="Ferrari Club Logo" class="h-20 md:h-24 mr-6 mb-4 md:mb-0">
+                <div>
+                    <h1 class="text-3xl md:text-5xl font-serif font-bold mb-2" >Ferrari Owners' Club of the Netherlands</h1>
+					<p class="text-xl">European Rally 2025</p>
+					
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<!-- Parallax Section -->
+	<section class="parallax parallax1">
+	  <div class="parallax-content">
+		<h2>The annual European tour: luxury and excitement, woven together.</h2>
+		</div>
+	</section>
+								
+    <!-- Project Description -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+			
+                <h2 class="text-3xl font-serif font-bold mb-6 project-title">Project Overview</h2>
+                <p class="text-lg text-gray-700 mb-6 project-p">The Ferrari Club of the Netherlands wanted an exclusive memento for its flagship event. We collaborated to design a custom blanket featuring the club's logo of the iconic Ferrari stallion atop the bold colors of the Holland flag. The blankets were presented on the opening evening, becoming an instant conversation piece and treasured gear on the tour.</p>
+                
+
+			</div>
+		</div>
+	</section>					
+				
+    <!-- Image Gallery -->
+    <section class="section-padding bg-soft-cream">
+        <div class="container">
+            <h2 class="text-headline text-center">Project Gallery</h2>
+            <div class="project-gallery">
+                <div class="gallery-item large">
+                    <img src="assets/img/tmpferrari2.png" alt="Ferrari Blanket Design" class="subtle-rounded">  
+                    <div class="smoke-overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/clubs/Ferrari1.png" alt="Ferrari Detail 1" class="subtle-rounded">
+                    <div class="smoke-overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/clubs/Ferrari2.png" alt="Ferrari Detail 2" class="subtle-rounded">
+                    <div class="smoke-overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/clubs/Ferrari3.png" alt="Ferrari Detail 3" class="subtle-rounded">
+                    <div class="smoke-overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/clubs/Ferrari bags.jpg" alt="Ferrari Packaging" class="subtle-rounded">
+                    <div class="smoke-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>			
+				
+	<section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+			
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md mt-8">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 text-lg italic">"The custom blankets created for our club members exceeded our expectations. The attention to detail and quality craftsmanship perfectly captured the essence of our brand and created a memorable keepsake for our European tour."</p>
+                    <div class="flex items-center">
+                        <div>
+                            <h4 class="font-bold">Club President</h4>
+                            <p class="text-sm text-gray-500">Ferrari Club of the Netherlands</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- Parallax Section#2 -->
+	<section class="parallax parallax2">
+	  <div class="parallax-content">
+		<h2>Ready to Create Your Own?</h2>
+	   <p class="text-xl mb-8 max-w-3xl mx-auto">Let's design a custom blanket to tell your story and create a lasting impression.</p>
+	   <a href="about-us.html#contact" class="btn-primary">Start Your Design</a>
+	   <br><br><a href="index.html#portfolio">Back to Gallery</a>
+	  </div>
+	</section
+
+    
+ <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ecuadane Artisan Designs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+		 <script>
+		  AOS.init({
+			once: true,        // animate only the first time they scroll into view
+			duration: 600      // ms; adjust to taste
+		  });
+		</script>
+		<script src="script.js"></script>
+		<script>
+		  const btn   = document.getElementById('menu-toggle');
+		  const menu  = document.getElementById('mobile-menu');
+		  btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+		</script>
+	</body>
+</html>

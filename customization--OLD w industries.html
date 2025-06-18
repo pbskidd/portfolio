@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customization Services | Ecuadane Artisan Designs</title>
+	    <!-- Tailwind CSS -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2c3e50',
+                        secondary: '#34495e',
+                        accent: '#c0392b',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+	
+	
+	<!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles2.css">
+	<link rel="stylesheet" href="tailwind-overrides.css">
+	
+	<!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+
+<!-- Navigation -->
+<nav class="nav-container bg-white shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+
+      <!-- ① Brand / logo -->
+      <a href="index.html" class="flex items-center">
+        <img src="assets/img/Ecuadane Logo-sm.png" alt="Brand" class="h-12 w-auto">
+      </a>
+
+      <!-- ② Desktop links -->
+      <ul class="hidden md:flex space-x-8 font-medium">
+        <li class="li-shift"><a href="index.html" class="hover:text-primary">Home</a></li>
+		<li class="li-shift"><a href="customization.html" class="hover:text-primary li-shift">Customization</a></li>
+        <li><button class="btn-refined-primary">Design Your Own</button></li>
+      </ul>
+
+      <!-- ③ Hamburger button (md:hidden keeps it mobile-only) -->
+      <button id="menu-toggle"
+              class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-primary">
+        <!-- Icon from Heroicons -->
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+             fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ④ Mobile slide-down menu -->
+  <ul id="mobile-menu"
+      class="md:hidden hidden px-4 pb-4 space-y-2 font-medium">
+    <li><a href="index.html" class="block py-2 border-b">Home</a></li>
+    <li><a href="customization.html" class="block py-2 border-b">Customization</a></li>
+	<li><button class="btn-refined-primary">Design Your Own</button></li>
+  </ul>
+</nav>
+    <!-- Hero Section -->
+    <section class="customization-hero">
+        <div class="container">
+            <div class="hero-content text-center">
+                <h1 class="customization-title">Customization Services</h1>
+                <p class="customization-subtitle">Discover how we serve elite organizations across different sectors with bespoke luxury blanket solutions that embody sophistication, prestige, and uncompromising quality.</p>
+            </div>
+        </div>
+    </section>
+    <!-- How It Works Section -->
+    <section class="section-padding bg-warm-white">
+        <div class="container">
+            <div class="text-center section-header">
+                <h2 class="text-headline">How It Works</h2>
+                <p class="text-body-large">Our collaborative process ensures your custom blankets perfectly capture your brand's essence.</p>
+            </div>
+            
+            <div class="how-it-works-grid">
+                <div class="how-it-works-item">
+                    <div class="step-number">1</div>
+                    <h3>Consultation</h3>
+                    <p>We begin with a detailed consultation to understand your brand, goals, and vision for your custom blankets.</p>
+                </div>
+                <div class="how-it-works-item">
+                    <div class="step-number">2</div>
+                    <h3>Design</h3>
+                    <p>Our designers create custom concepts that align with your brand identity and meet your specific requirements.</p>
+                </div>
+                <div class="how-it-works-item">
+                    <div class="step-number">3</div>
+                    <h3>Production</h3>
+                    <p>Once the design is approved, we craft your blankets using premium materials and meticulous attention to detail.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Associations & Clubs Section -->
+    <section class="customization-section associations-clubs">
+        <div class="container">
+            <div class="section-content">
+                <div class="section-text">
+                    <div class="section-icon">👥</div>
+                    <h2>Associations & Clubs</h2>
+                    <p>Elevate your club's prestige with custom blankets that embody tradition, exclusivity, and shared passion.</p>
+                    <ul class="service-list">
+                        <li>Sportscar Clubs</li>
+                        <li>Polo Clubs</li>
+                        <li>Golf Clubs</li>
+                        <li>Yacht Clubs</li>
+                        <li>Equestrian Societies</li>
+                    </ul>
+                    <button class="btn-refined">Explore Associations & Clubs Solutions</button>
+                </div>
+                <div class="section-images">
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="assets/img/clubs/Ferrari of Netherlands blanket.jpeg" alt="Ferrari Club Blanket" class="subtle-rounded">
+                            <div class="smoke-overlay"></div>
+                        </div>
+                        <div class="image-item">
+                            <img src="assets/img/clubs/Greenwich Polo Club-Logo.png" alt="Greenwich Polo" class="subtle-rounded">
+                            <div class="smoke-overlay"></div>
+                        </div>
+                        <div class="image-item">
+                            <img src="assets/img/clubs/St. Andrews-clubhouse-cropped.png" alt="St. Andrews Clubhouse" class="subtle-rounded">
+                            <div class="smoke-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Institutions Section -->
+    <section class="customization-section institutions">
+        <div class="container">
+            <div class="section-content reverse">
+                <div class="section-images">
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="assets/img/notre dame logo.jpg" alt="Notre Dame" class="subtle-rounded">
+                            <div class="smoke-overlay"></div>
+                        </div>
+                        <div class="image-item">
+                            <img src="assets/img/universities/Manhattanville logo.jpg" alt="Manhattanville" class="subtle-rounded">
+                            <div class="smoke-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-text">
+                    <div class="section-icon">🎓</div>
+                    <h2>Institutions</h2>
+                    <p>Honor academic excellence and institutional heritage with custom blankets that reflect your values.</p>
+                    <ul class="service-list">
+                        <li>Universities & Colleges</li>
+                        <li>Medical Institutions</li>
+                        <li>Research Centers</li>
+                        <li>Cultural Organizations</li>
+                        <li>Foundations</li>
+                    </ul>
+                    <button class="btn-refined">Explore Institutions Solutions</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hospitality Section -->
+    <section class="customization-section hospitality">
+        <div class="container">
+            <div class="section-content">
+                <div class="section-text">
+                    <div class="section-icon">🏨</div>
+                    <h2>Hospitality</h2>
+                    <p>Create unforgettable guest experiences with luxury blankets that define your brand's commitment to excellence.</p>
+                    <ul class="service-list">
+                        <li>Luxury Hotels</li>
+                        <li>Resorts & Spas</li>
+                        <li>Private Clubs</li>
+                        <li>Boutique Properties</li>
+                        <li>Ranch Destinations</li>
+                    </ul>
+                    <button class="btn-refined">Explore Hospitality Solutions</button>
+                </div>
+                <div class="section-images">
+                    <div class="image-grid">
+                        <div class="image-item">
+                            <img src="assets/img/hospitality/HotelHershey.jpg" alt="Hotel Hershey" class="subtle-rounded">
+                            <div class="smoke-overlay"></div>
+                        </div>
+                        <div class="image-item">
+                            <img src="assets/img/hospitality/whitestallion1.jpeg" alt="White Stallion Ranch" class="subtle-rounded">
+                            <div class="smoke-overlay"></div>
+                        </div>
+                        <div class="image-item">
+                            <img src="assets/img/Alisal Blanket pic.png" alt="Alisal Ranch Blanket" class="subtle-rounded">
+                            <div class="smoke-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container text-center">
+            <h2 class="text-headline">Ready to Create Your Custom Collection?</h2>
+            <p class="text-body-large">Let us help you design luxury blankets that perfectly represent your organization's unique story and values.</p>
+            <button class="btn-refined-primary">Start Your Project</button>
+        </div>
+    </section>
+
+ <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Ecuadane Artisan Designs</h3>
+                    <p>Crafting luxury custom blankets for discerning organizations worldwide.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="customization.html">Custom Design</a>
+                        <a href="customization.html">Associations & Clubs</a>
+                        <a href="customization.html">Institutions</a>
+                        <a href="customization.html">Hospitality</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#about">About Us</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#portfolio">Portfolio</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ecuadane Artisan Designs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+ <script>
+  AOS.init({
+    once: true,        // animate only the first time they scroll into view
+    duration: 600      // ms; adjust to taste
+  });
+</script>
+<script src="script.js"></script>
+<script>
+  const btn   = document.getElementById('menu-toggle');
+  const menu  = document.getElementById('mobile-menu');
+  btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+</script>
+</body>
+</html>

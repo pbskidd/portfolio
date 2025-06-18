@@ -1,0 +1,117 @@
+# Prompt for AI Web Builder: Portfolio Website
+
+## Objective
+
+Build a visually stunning, inspirational, and responsive portfolio website for a custom branded blankets company, using the provided wireframe and gallery structure. The site should capture visitors’ imagination, drive exploration, and generate high-quality inquiries from corporate clients.
+
+---
+
+## Core Design Considerations
+
+- The website must be **visually aspirational**—think editorial luxury, art gallery curation, and storytelling through images.
+- Use **rich animations** and immersive visual effects throughout, leveraging **TailwindCSS** (tailwind.js) for styling and layout, and **three.js** for advanced and interactive 3D or parallax elements.
+- All icons throughout the site should be loaded dynamically from a set of Favicons; allow for icon selection and variation across sections for a modern, dynamic look.
+- The site **must be fully responsive**, maintaining elegance and usability on all devices (desktop, tablet, mobile).
+
+---
+
+## Page Structure & Content
+
+### 1. Homepage
+
+- Hero section with a full-bleed image or video of a custom blanket in use.
+- Headline and subheadline clearly communicate craftsmanship, aspiration, and call-to-action (CTA).
+- Display client logos for social proof.
+- Animated carousel featuring highlights from real client projects.
+- “How It Works” section using icons, animations, and step-based visual storytelling. From here: https://single-slide-e3ga4j5.gamma.site/
+- Rotating testimonials or quotes.
+- Persistent CTA to browse portfolio or start a custom project.
+- reference this for ideas for sections and copy to supplement with.
+
+### 2. Portfolio Gallery
+
+- Masonry or grid gallery with rich hover/focus animations for each card.
+- Each gallery item corresponds to a real client or organization (as described in the wireframe), including:
+    - **Clubs & Associations:** Ferrari Club of the Netherlands, Greenwich Polo Club, St. Andrews Golf Club, Use this as an intro: https://gamma.app/docs/Blank-2-xo96odzhhktsmm2?mode=present#card-hiqh2rum9r0jmqw
+
+    - **Guest Ranches & Hospitality:** Alisal Ranch, White Stallion Ranch, Hershey Hotel, Brush Creek Ranch
+    - **Universities:** Notre Dame, Fordham University, Manhattanville, Sacred Heart University
+    - **Charities:** Wounded Warrior Project, Medicine For All People, Tunnel to Towers, The Nature Conservancy, Children’s Miracle Network
+- **Corporations:** RE/MAX, Chenega, NYU Langone Health, Bitwise
+- Include category filters at the top for easy browsing.
+- Each project card features a prominent image, organization logo, and a one-sentence description.
+- Clicking a project opens a detail page with immersive images, project story, testimonials, and “Start Your Project” CTA.
+
+### 3. Project Detail Page
+
+- Large, immersive hero image (use three.js for subtle 3D parallax or transitions).
+- Organization logo, project title, and summary.
+- Project story, gallery images, testimonial.
+- CTA button for new inquiries.
+
+### 4. Start Your Project Form
+
+- Elegant, multi-step form for inquiries and sample requests.
+- Responsive and animated input fields.
+
+### 5. About Us / Brand Story
+
+- Narrative-driven with artisan imagery, company mission, sustainability, and impact.
+- Recognition/press section with animated or interactive logos.
+- Prominent CTA.
+
+---
+
+## Special Horizontal Sections to Include
+
+- **A.** Add a horizontal section with the content and background image from:  
+  [https://single-slide-e3ga4j5.gamma.site/](https://single-slide-e3ga4j5.gamma.site/)
+
+- **B.** Add a horizontal section with the content and background image from:  
+  [https://gamma.app/docs/Blank-2-xo96odzhhktsmm2?mode=present#card-hiqh2rum9r0jmqw](https://gamma.app/docs/Blank-2-xo96odzhhktsmm2?mode=present#card-hiqh2rum9r0jmqw)
+
+- **C.** Add a horizontal section with the content and image from:  
+  [https://untitled-xddmb38.gamma.site/](https://untitled-xddmb38.gamma.site/)
+
+Each of these sections should be integrated seamlessly into the site, using responsive layouts and rich animated transitions. Respect the original design intent and aesthetic of the referenced sections, but ensure they fit cohesively within the overall brand and flow.
+
+---
+
+## Animation & Immersion Requirements
+
+- Use **tailwind.js** for all styling, spacing, typography, and layout.
+- Use **three.js** to create immersive visual effects—parallax scrolling, animated backgrounds, or interactive 3D elements—especially in hero, gallery, and special horizontal sections.
+- Animate transitions between sections and on scroll; use microinteractions for buttons and cards.
+- Load and use Favicons as the icon set throughout; allow for icon selection by section and ensure variety.
+
+---
+
+## Additional Guidelines
+
+- All images should be optimized for fast loading (use responsive image sets).
+- Prioritize accessibility: color contrast, alt text, keyboard navigation.
+- SEO-friendly: use semantic HTML, meta tags, open graph data.
+- Include sticky CTAs and smooth navigation.
+-  Output as HTML, CSS and Javascript files but script libraries can be linked to online resources. Save images and video to an “img” directory.
+- Take inspiration from each organization's website, if possible, copy videos and images.
+- if a referenced image cannot be found, look for other images for this entity, if not found, either draw one, or source a relevant image from stock image libraries, or just use a placeholder image
+
+
+---
+
+## Assets Provided
+
+- [Attach PDF wireframes]
+- [Portfolio gallery items and project descriptions]
+
+---
+
+## Deliverable
+
+A fully functional, responsive, immersive portfolio website with all the features, content, and special horizontal sections described above, built using TailwindCSS (tailwind.js) and three.js, and leveraging Favicons for all icons.
+
+---
+
+**If you have any questions about content, image assets, or the desired “look and feel,” please ask for clarification or examples before proceeding.**
+
+

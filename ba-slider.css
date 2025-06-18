@@ -1,0 +1,75 @@
+/* ─── Layout helpers ────────────────────────────────────────────── */
+.compare {
+  max-width: 900px;          /* adapt or remove */
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+.compare__heading { margin-bottom: 1rem; }
+.compare__caption { margin-top: .5rem; font-size: .875rem; color: #666; }
+
+/* ─── Slider container ─────────────────────────────────────────── */
+.ba-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: ew-resize;
+  user-select: none;
+  /* The height is set by JS so images stay proportional */
+}
+
+/* ─── Images ───────────────────────────────────────────────────── */
+.ba-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* never crop, preserve aspect */
+  pointer-events: none;
+}
+.ba-img--reveal {
+  clip-path: inset(0 0 0 50%);             /* 50-50 starting split */
+  transition: clip-path .2s ease-out;
+}
+
+/* ─── Handle ───────────────────────────────────────────────────── */
+.ba-handle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  pointer-events: all;
+}
+.ba-handle__bar {
+  width: 2px;
+  height: 100%;
+  background: #ffffffaa;
+  backdrop-filter: blur(3px);
+}
+.ba-handle__knob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 38px;
+  height: 38px;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid #000;
+  box-shadow: 0 0 8px rgba(0,0,0,.35);
+}
+
+.compare{
+	margin-top:0;
+	Padding-top:40px;
+	margin-bottom:0;
+	Padding-bottom:40px;
+}
+
+.compare__caption{
+	color: white;
+}

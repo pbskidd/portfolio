@@ -1,0 +1,6 @@
+/* Brand logos inside the overlay */
+.gallery-overlay img{
+  width:auto !important;     /* cancel 100 % */
+  height:2rem !important;    /* = Tailwind h-8 */
+  object-fit:contain;
+}

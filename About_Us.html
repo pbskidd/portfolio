@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuadane Artisan Designs | Luxury Custom Blankets</title>
+	
+	
+	<!-- Tailwind CSS -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2c3e50',
+                        secondary: '#34495e',
+                        accent: '#c0392b',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+	
+	<!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles2.css">
+	<link rel="stylesheet" href="tailwind-overrides.css">
+	
+	<!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+	
+<body>
+
+
+	<!-- Navigation -->
+	<nav class="nav-container bg-white shadow-lg">
+	  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="flex justify-between h-16 items-center">
+
+		  <!-- ① Brand / logo -->
+		  <a href="index.html" class="flex items-center">
+			<img src="assets/img/Ecuadane Logo-sm.png" alt="Brand" class="h-12 w-auto">
+		  </a>
+
+		  <!-- ② Desktop links -->
+		  <ul class="hidden md:flex space-x-8 font-medium">
+			<li><a href="index.html#portfolio" class="hover:text-primary">Portfolio</a></li>
+			<li><a href="customization.html" class="hover:text-primary">How it Works</a></li>
+			<li><a href="https://www.ecuadane.com/" class="hover:text-primary">Private Collection</a></li>
+			<li><a href="about_us.html" class="hover:text-primary">About Us</a></li>
+		  </ul>
+
+		  <!-- ③ Hamburger button (md:hidden keeps it mobile-only) -->
+		  <button id="menu-toggle"
+				  class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-primary">
+			<!-- Icon from Heroicons -->
+			<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+				 fill="none" viewBox="0 0 24 24" stroke="currentColor">
+			  <path stroke-linecap="round" stroke-linejoin="round"
+					stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+			</svg>
+		  </button>
+		</div>
+	  </div>
+
+	  <!-- ④ Mobile slide-down menu -->
+	  <ul id="mobile-menu"
+		  class="md:hidden hidden px-4 pb-4 space-y-2 font-medium">
+		<li><a href="index.html"      class="block py-2 border-b">Home</a></li>
+		<li><a href="index.html#portfolio" class="block py-2 border-b">Portfolio</a></li>
+		<li><a href="customization.html" class="block py-2 border-b">How it Works</a></li>
+		<li><a href="https://www.ecuadane.com/" class="block py-2 border-b">Private Collection</a></li>
+		<li><a href="about_us.html" class="block py-2">About Us</a></li>
+	  </ul>
+	</nav>
+ 
+    <!-- About Ecuadane Section -->
+    <section class="section-padding bg-warm-white topsec">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="text-headline">About Ecuadane</h2>
+                    <p class="text-body-large">We are a woman-owned, US marketing company dedicated to making our clients unmistakably recognized and genuinely appreciated.</p><p class="text-body-large">Drawing on a distinctive multicultural blend—the inviting warmth of Danish hygge paired with the artisan mastery of Ecuadorian craftsmanship—we solve promotional challenges by designing seductive, high-performance products that nurture comfort while delivering a superior return on advertising spend.</p><p class="text-body-large">The result is more than merchandise; we build an emotional connection that establishes lasting rapport and turns every branded piece into something people truly love.</p>
+                    <br><a href="customization.html" class="btn-refined-primary">Discover Our Services</a>
+                </div>
+                <div class="about-image">
+                    <img src="assets/img/misc/hygge.png" alt="Ecuadane Hygge" class="subtle-rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+     
+	
+
+    <!-- Client Testimonials -->
+    <section class="section-padding bg-soft-cream">
+        <div class="container">
+            <h2 class="text-headline text-center">What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <p>"The custom blankets created for our club members exceeded our expectations. The attention to detail and quality craftsmanship perfectly captured the essence of our brand and created a memorable keepsake for our European tour."</p>
+                    <div class="testimonial-author">
+                        <strong>Club President</strong><br>
+                        Ferrari Club of the Netherlands
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"These blankets have become an integral part of our donor recognition program. They beautifully represent our mission and have helped strengthen our connection with supporters who are making a difference in the lives of wounded veterans."</p>
+                    <div class="testimonial-author">
+                        <strong>Development Director</strong><br>
+                        Wounded Warrior Project
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"The custom blankets have become a cherished part of our guest experience. They perfectly capture our blend of rustic luxury and Western heritage, and have become one of our most popular retail items."</p>
+                    <div class="testimonial-author">
+                        <strong>Hospitality Director</strong><br>
+                        Alisal Ranch
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Let Us Weave Your Story -->
+    <section class="section-padding bg-soft-cream"> 
+        <div class="container text-center">
+            <h2 class="text-headline">Let Us Weave Your Story</h2>
+            <p class="text-body-large">Ready to create custom blankets that perfectly represent your organization's values and heritage?</p>
+
+        </div>
+    </section>
+	
+	    <section id="contact" class="contact bump_down">
+        <div class="container2">
+
+            <div class="contact-grid">
+                <div class="contact-wrap">
+
+
+<div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-serif font-bold mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="text-accent text-xl mt-1 mr-4"><i class="fas fa-map-marker-alt"></i></div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Address</h4>
+                                    <p class="text-gray-600">9 Windsor Court<br>Purchase, NY 10577</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-accent text-xl mt-1 mr-4"><i class="fas fa-phone"></i></div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Phone</h4>
+                                    <p class="text-gray-600">(914) 659-1747</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-accent text-xl mt-1 mr-4"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Email</h4>
+                                    <p class="text-gray-600">hello@ecuadane.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-accent text-xl mt-1 mr-4"><i class="fas fa-clock"></i></div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Hours</h4>
+                                    <p class="text-gray-600">Monday - Friday: 9am - 5pm ET</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-4">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://instagram.com/ecuadane" class="text-accent hover:text-primary transition-colors duration-300 text-2xl"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/ecuadane" class="text-accent hover:text-primary transition-colors duration-300 text-2xl"><i class="fab fa-facebook"></i></a>
+                                <!--<a href="#" class="text-accent hover:text-primary transition-colors duration-300 text-2xl"><i class="fab fa-linkedin"></i></a>
+								https://twitter.com/ecuadane
+								https://tiktok.com/@ecuadane
+								-->
+                                <a href="https://pinterest.com/ecuadane" class="text-accent hover:text-primary transition-colors duration-300 text-2xl"><i class="fab fa-pinterest"></i></a>
+                            
+							</div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="contact-form">
+				<div class="google-form">
+				    
+                    <iframe class="contactform" src="https://docs.google.com/forms/d/e/1FAIpQLSf_pVeqBCrZpIF6UdxvyfA_RhMGy5yoFRU61s7DVsw5zduCXg/viewform?embedded=true" width="640" height="790" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                
+				</div>
+				</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ecuadane Artisan Designs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+ <script>
+  AOS.init({
+    once: true,        // animate only the first time they scroll into view
+    duration: 600      // ms; adjust to taste
+  });
+</script>
+<script src="script.js"></script>
+<script>
+  const btn   = document.getElementById('menu-toggle');
+  const menu  = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+</script>
+
+
+
+<script>
+/* ── Make whole gallery-item clickable ─────────────────────── */
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    const link = item.querySelector('a[href]');        // the existing “View Project” link
+    if (!link) return;                                 // skip if no link inside
+
+    item.style.cursor = 'pointer';                     // give visual cue
+
+    item.addEventListener('click', e => {
+      /* If the actual click was on a real <a>, let its default behaviour run.
+         Otherwise send the user to the same URL. */
+      let n = e.target;
+      while (n && n !== item) {
+        if (n.tagName === 'A') return;                 // already on a link – do nothing
+        n = n.parentElement;
+      }
+      window.location = link.href;                     // navigate
+    });
+  });
+});
+</script>
+
+</body>
+</html>
+
