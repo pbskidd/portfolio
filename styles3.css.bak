@@ -32,7 +32,6 @@ body {
   line-height: 1.6;
   color: var(--color-dark);
   background-color: var(--color-warm-white);
-  background-color: #454340;
 }
 
 /* Typography */

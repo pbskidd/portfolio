@@ -113,7 +113,7 @@
 	
 	<!-- Compare Section (can be duplicated or wrapped inside any layout) -->
 <section class="compare section-padding">
-  <h2 class="text-headline">Transform Your Vision to Reality</h2>
+  <h2 class="text-headline">Transform Image to Reality</h2>
   <p class="compare__caption">Drag the handle or use ← / → keys.</p>
   <!-- --- Slider container --- -->
   <div class="ba-slider" tabindex="0">
