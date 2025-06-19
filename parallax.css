@@ -88,3 +88,12 @@
   }
 }
 
+/* 📱 Mobile fallback – show the image, lose the fixed attachment */
+@media (hover:none), (max-width:768px){
+  .parallax,      /* base */
+  .parallax1,     /* first custom image */
+  .parallax2{     /* second custom image */
+    background-attachment: scroll;   /* let the image paint */
+    background-size: cover;          /* keep it full-bleed */
+  }
+}

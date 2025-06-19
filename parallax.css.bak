@@ -83,7 +83,7 @@
     background-size: auto auto;
 
     /* Prevent the element itself from exceeding the viewport width. */
-    max-height: 300%;
+    max-height: 200%;
 	
   }
 }
