@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wounded Warrior Project | Custom Branded Blankets</title>
-    <meta name="description" content="Wounded Warrior Project custom branded blankets - Supporting wounded veterans and families with custom blankets that reinforce unity.">
-
-  <!-- Tailwind CSS -->
+    <title>Wounded Warrior Project | Blankets to Honor Donors</title>
+    <meta name="description" content="Alisal Ranch custom branded blankets - Luxury guest ranch and resort in California's Santa Ynez Valley.">
+    
+	    <!-- Tailwind CSS -->
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -32,6 +32,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles2.css">
 	<link rel="stylesheet" href="tailwind-overrides.css">
+	<!-- parallax -->
+	<link rel="stylesheet" href="parallax.css">
+	<style>
+		.parallax1 {background-image: url("assets/img/charities/Wounded Warrior Awards.jpg");}
+		.parallax2 {background-image: url("assets/img/charities/Wounded Warrior Project-Blanket Pattern.png");}
+	</style>
 	
 	<!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,241 +55,166 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	
-	
 </head>
+
 <body class="font-sans text-gray-800 bg-gray-50">
-    
-<!-- Navigation -->
-<nav class="nav-container bg-white shadow-lg">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between h-16 items-center">
 
-      <!-- ① Brand / logo -->
-      <a href="index.html" class="flex items-center">
-        <img src="assets/img/Ecuadane Logo-sm.png" alt="Brand" class="h-12 w-auto">
-      </a>
+	<!-- Navigation -->
+	<nav class="nav-container bg-white shadow-lg">
+	  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="flex justify-between h-16 items-center">
 
-      <!-- ② Desktop links -->
-      <ul class="hidden md:flex space-x-8 font-medium">
-        <li class="li-shift"><a href="index.html" class="hover:text-primary">Home</a></li>
-		<li class="li-shift"><a href="customization.html" class="hover:text-primary li-shift">Customization</a></li>
-        <li><button class="btn-refined-primary">Design Your Own</button></li>
-      </ul>
+		  <!-- ① Brand / logo -->
+		  <a href="index.html" class="flex items-center">
+			<img src="assets/img/Ecuadane Logo-sm.png" alt="Brand" class="h-12 w-auto">
+		  </a>
 
-      <!-- ③ Hamburger button (md:hidden keeps it mobile-only) -->
-      <button id="menu-toggle"
-              class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-primary">
-        <!-- Icon from Heroicons -->
-        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
-             fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round"
-                stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
-    </div>
-  </div>
+		  <!-- ② Desktop links -->
+		  <ul class="hidden md:flex space-x-8 font-medium">
+			<li><a href="index.html#portfolio" class="hover:text-primary">Portfolio</a></li>
+			<li><a href="customization.html" class="hover:text-primary">How it Works</a></li>
+			<li><a href="https://www.ecuadane.com/" class="hover:text-primary">Private Collection</a></li>
+			<li><a href="about_us.html" class="hover:text-primary">About Us</a></li>
+		  </ul>
 
-  <!-- ④ Mobile slide-down menu -->
-  <ul id="mobile-menu"
-      class="md:hidden hidden px-4 pb-4 space-y-2 font-medium">
-    <li><a href="index.html" class="block py-2 border-b">Home</a></li>
-    <li><a href="customization.html" class="block py-2 border-b">Customization</a></li>
-	<li><button class="btn-refined-primary">Design Your Own</button></li>
-  </ul>
-</nav>
-    
+		  <!-- ③ Hamburger button (md:hidden keeps it mobile-only) -->
+		  <button id="menu-toggle"
+				  class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-primary">
+			<!-- Icon from Heroicons -->
+			<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+				 fill="none" viewBox="0 0 24 24" stroke="currentColor">
+			  <path stroke-linecap="round" stroke-linejoin="round"
+					stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+			</svg>
+		  </button>
+		</div>
+	  </div>
+
+	  <!-- ④ Mobile slide-down menu -->
+	  <ul id="mobile-menu"
+		  class="md:hidden hidden px-4 pb-4 space-y-2 font-medium">
+		<li><a href="index.html" class="block py-2 border-b">Home</a></li>
+		<li><a href="index.html#portfolio" class="block py-2 border-b">Portfolio</a></li>
+		<li><a href="customization.html" class="block py-2 border-b">How it Works</a></li>
+		<li><a href="https://www.ecuadane.com/" class="block py-2 border-b">Private Collection</a></li>
+		<li><a href="about_us.html"   class="block py-2">Contact</a></li>
+	  </ul>
+	</nav>
+	 <!-- END NAVIGATION -->    
+	
+
     <!-- Project Header -->
     <section class="pt-32 pb-12 bg-white">
-        <div class="container mx-auto px-4">
-            
+        <div class="container mx-auto px-4">          
             <div class="flex flex-col md:flex-row items-center mb-12">
-                <img src="assets/img/charities/Wounded_Warrior_Project_logo.svg.png" alt="Wounded Warrior Project Logo" class="h-20 md:h-24 mr-6 mb-4 md:mb-0">
+                <img src="assets/img/charities/Wounded_Warrior_Project_logo.svg.png" alt="Wounded Warrior Project logo" class="h-20 md:h-24 mr-6 mb-4 md:mb-0">
                 <div>
                     <h1 class="text-3xl md:text-5xl font-serif font-bold mb-2">Wounded Warrior Project</h1>
-                    <p class="text-xl text-gray-600">Custom Blankets Supporting Veterans and Families</p>
+                    <p class="text-xl text-gray-600">To honor and empower wounded warriors.</p>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- Project Gallery -->
-    <section class="py-12 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                <div>
-                    <img src="assets/img/charities/Wounded Warrior Blanket Displayed.png" alt="Wounded Warrior Project Blanket" class="w-full h-auto rounded-lg shadow-lg project-image popout">
-					<br>
-					<img src="assets/img/charities/Wounded Warrior Awards.jpg" alt="Wounded Warrior Awards Ceremony 2024" class="w-full h-auto rounded-lg shadow-lg project-image popout">
-					
-					
-                </div>
-                <div>
-					<img src="assets/img/charities/wwp_thrive.jpg" alt="Wounded Warrior Project Helping Veterans Thrive" class="w-full h-auto rounded-lg shadow-lg project-image popout">
-					<br>
-                    <img src="assets/img/charities/Wounded Warrior Project-Blanket Pattern.png" alt="Wounded Warrior Project Blanket Detail" class="w-full h-auto rounded-lg shadow-lg project-image popout">
-					
-					
-                </div>
-            </div>
-        </div>
-    </section>
-    
+	
+	<!-- Parallax Section -->
+	<section class="parallax parallax1">
+	  <div class="parallax-content">
+		<h2>Honoring our vets and those who support them.</h2>
+		</div>
+	</section>
+								
     <!-- Project Description -->
     <section class="py-12 bg-white">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-serif font-bold mb-6">Project Overview</h2>
-                <p class="text-lg text-gray-700 mb-6">The Wounded Warrior Project, a leading nonprofit supporting wounded veterans and their families, partnered with us to create custom blankets that would serve as both meaningful gifts and symbols of appreciation for their donor community.</p>
+			
+                <h2 class="text-3xl font-serif font-bold mb-6 project-title">Project Overview</h2>
+                <p class="text-lg text-gray-700 mb-6 project-p">In support of the Wounded Warrior Project and the vital work they do, Ecuadane donated 100 custom blankets to the cause.
+
+Scott, their director of donor engagement said he had never seen a product like it. He decided to award them to major donors and happily reported soon after that they were <b>"getting bigger donations more frequently"</b>. WWP has been a valued partner ever since.</p>
                 
-                <h3 class="text-2xl font-serif font-bold mb-4 mt-8">The Challenge</h3>
-                <p class="text-lg text-gray-700 mb-6">Our challenge was to design blankets that would honor the service and sacrifice of veterans while providing comfort and a tangible reminder of the support network available to them through the Wounded Warrior Project.</p>
-                
-                <h3 class="text-2xl font-serif font-bold mb-4 mt-8">Our Approach</h3>
-                <p class="text-lg text-gray-700 mb-6">We collaborated closely with the Wounded Warrior Project team to develop a design that would resonate with veterans and their families. The result was a thoughtfully crafted blanket featuring:</p>
-                <ul class="list-disc pl-6 mb-6 text-lg text-gray-700 space-y-2">
-                    <li>The organization's distinctive logo and branding</li>
-                    <li>Patriotic elements that honor military service</li>
-                    <li>Durable, high-quality materials for everyday use</li>
-                    <li>Comfortable dimensions suitable for various settings</li>
-                </ul>
-                
-                <h3 class="text-2xl font-serif font-bold mb-4 mt-8">The Result</h3>
-                <p class="text-lg text-gray-700 mb-6">The custom blankets were distributed at various Wounded Warrior Project events and given as gifts to veterans and supporters. They quickly became cherished items that provided both physical comfort and emotional connection to the organization's mission.</p>
-                <p class="text-lg text-gray-700 mb-6">The blankets have helped strengthen the sense of community among program participants and have become a visible symbol of the organization's commitment to those they serve.</p>
-                
+				<div style="text-align: center; margin: 2rem 0;">
+					<a href="https://drive.google.com/file/d/1FQFbkCUcNj0zyHFmftb-kVqlsCAhgl8e/view?usp=drive_link" target="_blank" rel="noopener" class="inline-block text-blue-600 hover:underline text-lg font-semibold">
+						Watch the testimonal from WWP about how we made their fundraising more successful
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>					
 				
+	<section class="py-12 bg-gray-50">
+	  <div class="container mx-auto px-4">
+		<div class="gallery-4">
+		  <figure class="gallery-4-item">
+			<img src="assets/img/charities/HTC-Soldier Ride thumb.jpg" class="popout" alt="WWP HTC Soldier Ride">
+		  </figure>
+		  <figure class="gallery-4-item">
+			<img src="assets/img/charities/CTE-thumb.jpg" class="popout"  alt="WWP CTE Friendships">
+		  </figure>
+		  <figure class="gallery-4-item">
+			<img src="assets/img/charities/Honor Their Courage advance-thumb.jpg" class="popout"  alt="HTC Honor Their Courage">
+		  </figure>
+		  <figure class="gallery-4-item">
+			<img src="assets/img/charities/WWP_NFP_Warrior_515x.jpg" class="popout"  alt="A wonnded vetrain proudly carrying the flag">
+		  </figure>
+		</div>
+	  </div>
+	</section>				
 				
-				<div class="centered-image">
-  <img src="assets/img/charities/scott.png" alt="Scott" class="centered-img popout">
-</div>
-				
-								<div style="text-align: center; margin: 2rem 0;">
-  <a href="https://drive.google.com/file/d/1FQFbkCUcNj0zyHFmftb-kVqlsCAhgl8e/view?usp=drive_link" target="_blank" rel="noopener" class="inline-block text-blue-600 hover:underline text-lg font-semibold">
-    WWP Video Testimonial About Ecuadane's Contribution
-  </a>
-</div>
-				
-				
+	<section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+			
                 <div class="bg-gray-50 p-8 rounded-lg shadow-md mt-8">
                     <div class="text-accent text-4xl mb-4">
                         <i class="fas fa-quote-left"></i>
                     </div>
-                    <p class="text-gray-700 mb-6 text-lg italic">"A heartfelt gift that brings comfort and gratitude to our community. The quality and design exceeded our expectations, and the blankets have become a meaningful way to connect with those we serve."</p>
+                    <p class="text-gray-700 mb-6 text-lg italic">"Working with Ecuadane has allwed us to connecect with our major donors and get bigger donations more frequently"</p>
                     <div class="flex items-center">
                         <div>
-                            <h4 class="font-bold">Wounded Warrior Project</h4>
-                            <p class="text-sm text-gray-500">Program Director</p>
+                            <h4 class="font-bold">Scott Forshey-Friedman</h4>
+                            <p class="text-sm text-gray-500">WWP Director of Donor Experience & Engagement</p>
                         </div>
                     </div>
                 </div>
             </div>
+
+
         </div>
     </section>
+    <!-- Parallax Section#2 -->
+	<section class="parallax parallax2">
+	  <div class="parallax-content">
+		<h2>Ready to Create Your Own?</h2>
+	   <p class="text-xl mb-8 max-w-3xl mx-auto">Let's design a custom blanket to tell your story and create a lasting impression.</p>
+	   <a href="about-us.html#contact" class="btn-primary">Start Your Design</a>
+	   <br><br><a class="backlink" href="index.html#portfolio">Back to Gallery</a>
+	  </div>
+	</section>
+
     
-    <!-- Related Projects -->
-    <section class="py-12 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-serif font-bold mb-8 text-center">Related Projects</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Tunnel to Towers -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
-                    <div class="relative h-64">
-                        <img src="assets/img/charities/Tunnel2Towers-Blanket pattern.png" alt="Tunnel to Towers Blanket" class="w-full h-full object-cover popout">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-4">
-                            <img src="assets/img/charities/Tunnel 2 Towers patch.png" alt="Tunnel to Towers patch" class="h-10 mr-4 popout">
-                            <h3 class="text-xl font-bold">Tunnel to Towers</h3>
-                        </div>
-                        <p class="text-gray-600 mb-4">National nonprofit supporting first responders and military families.</p>
-                        <a href="tunnel-to-towers.html" class="text-accent hover:underline">View Project <i class="fas fa-arrow-right ml-1"></i></a>
-                    </div>
-                </div>
-                
-                <!-- Medicine For All People -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
-                    <div class="relative h-64">
-                        <img src="assets/img/charities/Medicine for All People.jpeg" alt="Medicine For All People Blanket" class="w-full h-full object-cover popout">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-4">
-                            <img src="assets/img/charities/medicine for all people logo.png" alt="Medicine For All People Logo" class="h-10 mr-4">
-                            <h3 class="text-xl font-bold">Medicine For All People</h3>
-                        </div>
-                        <p class="text-gray-600 mb-4">Charity dedicated to providing medical care globally.</p><br>
-                        <a href="medicine-for-all.html" class="text-accent hover:underline">View Project <i class="fas fa-arrow-right ml-1"></i></a>
-                    </div>
-                </div>
-                
-                <!-- The Nature Conservancy -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
-                    <div class="relative h-64">
-                        <img src="assets/img/charities/the nature conservancy blanket 1.png" alt="The Nature Conservancy Blanket" class="w-full h-full object-cover popout">
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center mb-4">
-                            <img src="assets/img/charities/The Nature Conservancy logo.png" alt="The Nature Conservancy Logo" class="h-10 mr-4">
-                            <h3 class="text-xl font-bold">The Nature Conservancy</h3>
-                        </div>
-                        <p class="text-gray-600 mb-4">Global leader in environmental conservation.</p><br>
-                        <a href="nature-conservancy.html" class="text-accent hover:underline">View Project <i class="fas fa-arrow-right ml-1"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- CTA Section -->
-    <section class="py-16 bg-primary text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">Ready to Create Your Custom Blankets?</h2>
-            <p class="text-xl mb-8 max-w-3xl mx-auto">Let us help you design custom blankets that tell your story and create lasting impressions for your organization.</p>
-            <a href="../index.html#contact" class="px-8 py-3 bg-accent text-white text-lg rounded-md hover:bg-opacity-90 transition-all duration-300 inline-block">Start Your Project</a>
-        </div>
-    </section>
-    
-<!-- Footer -->
+ <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>Ecuadane Artisan Designs</h3>
-                    <p>Crafting luxury custom blankets for discerning organizations worldwide.</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Services</h4>
-                        <a href="customization.html">Custom Design</a>
-                        <a href="customization.html">Associations & Clubs</a>
-                        <a href="customization.html">Institutions</a>
-                        <a href="customization.html">Hospitality</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Company</h4>
-                        <a href="#about">About Us</a>
-                        <a href="#contact">Contact</a>
-                        <a href="#portfolio">Portfolio</a>
-                    </div>
-                </div>
-            </div>
+
             <div class="footer-bottom">
                 <p>&copy; 2024 Ecuadane Artisan Designs. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
     
- <script>
-  AOS.init({
-    once: true,        // animate only the first time they scroll into view
-    duration: 600      // ms; adjust to taste
-  });
-</script>
-<script src="script.js"></script>
-<script>
-  const btn   = document.getElementById('menu-toggle');
-  const menu  = document.getElementById('mobile-menu');
-  btn.addEventListener('click', () => menu.classList.toggle('hidden'));
-</script>
-</body>
+		 <script>
+		  AOS.init({
+			once: true,        // animate only the first time they scroll into view
+			duration: 600      // ms; adjust to taste
+		  });
+		</script>
+		<script src="script.js"></script>
+		<script>
+		  const btn   = document.getElementById('menu-toggle');
+		  const menu  = document.getElementById('mobile-menu');
+		  btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+		</script>
+	</body>
 </html>

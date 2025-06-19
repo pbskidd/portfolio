@@ -53,7 +53,7 @@
   display: inline-block;
   margin-top: 2rem;
   padding: 0.75rem 2.25rem;
-  background: #c0392b;          /* accent colour */
+  background: #4c694e9e;
   color: #fff;
   font-weight: 600;
   text-decoration: none;
@@ -61,7 +61,9 @@
   transition: background 0.3s ease;
 }
 
-.btn-primary:hover { background: #9f2d21; }
+.btn-primary:hover {     background: #205a249e; }
+
+
 
 /* mobile fallback — iOS Safari ignores background-attachment:fixed */
 @media (max-width: 768px) {

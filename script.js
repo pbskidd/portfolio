@@ -1,11 +1,11 @@
 // =============================================================
-// HERO CAROUSEL  —  endless right‑to‑left loop + per‑slide Ken Burns
+// HERO CAROUSEL  —  endless right-to-left loop + per-slide Ken Burns
 // =============================================================
 //  * Carousel never vanishes: DOM‑shuffle method keeps translateX range 0→‑100%
 //  * Slides always advance in the SAME direction (right→left) with no jerk
-//  * Prev / Next buttons, dots, hover‑pause & touch‑swipe all work
-//  * Each slide gets its own 12 s Ken‑Burns pan‑zoom that NEVER shows empty
-//    edges (max ±6 % pan; img starts bigger than frame)
+//  * Prev / Next buttons, dots, hover-pause & touch‑swipe all work
+//  * Each slide gets its own 12 s Ken-Burns pan‑zoom that NEVER shows empty
+//    edges (max ±6 % pan; img startsbigger than frame)
 //
 //  HTML assumptions (already in your markup):
 //    <div id="carouselTrack" class="flex w-full">  <!-- overflow hidden on wrapper -->
@@ -18,10 +18,10 @@
 // -------------------------------------------------------------
 (() => {
   // ---------- CONFIG ----------
-  const SLIDE_MS = 12_000;           // one slide = 12 s
+  const SLIDE_MS = 7_000;           // one slide = 7 s
   const TRANSITION_MS = 700;         // slide scroll time
 
-  // Per‑slide Ken‑Burns specs (percent pan so edges never show)
+  // Per slide KenBurns specs (percent pan so edges never show)
   const PANS = [
     { name: 'pan0', from: 'scale(1.35) translate(0,0)',       to: 'scale(1.20) translate(6%,0)'  }, // out + right
     { name: 'pan1', from: 'scale(1.20) translate(0,0)',       to: 'scale(1.35) translate(-6%,0)' }, // in  + left

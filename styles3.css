@@ -1173,9 +1173,12 @@ object-fit:cover;
 /* Process Section */
 .process-grid {
     display: grid;
-    gap: 4rem;
+    gap: 1rem;
     max-width: 900px;
     margin: 0 auto;
+	background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 }
 
 .process-item {
@@ -1186,8 +1189,7 @@ object-fit:cover;
     padding: 2rem;
     background: white;
     border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
 }
 
@@ -1196,22 +1198,7 @@ object-fit:cover;
     box-shadow: 0 8px 30px rgba(0,0,0,0.12);
 }
 
-.process-item::before {
-    content: attr(data-step);
-    position: absolute;
-    top: -15px;
-    left: 2rem;
-    background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
-    color: white;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 0.875rem;
-}
+
 
 .process-icon {
     display: flex;
@@ -1570,6 +1557,9 @@ object-fit:cover;
    Because the section now collapses to its content, that image simply crops
    to whatever space the hero actually needs.)                               */
 
-body {
-        background-color: #52504e;
+
+
+.footer{
+    padding-top: 0px;
 }
+
