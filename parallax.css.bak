@@ -75,13 +75,3 @@
 	padding-top:40px;
 }
 
-@media (max-width: 768px) {
-  .parallax {
-    /* Let the image stretch to the full width of the element
-       while automatically scaling the height to keep its aspect ratio. */
-    background-size: 100% auto;
-
-    /* Prevent the element itself from exceeding the viewport width. */
-    max-width: 100%;
-  }
-}
