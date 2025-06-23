@@ -97,3 +97,11 @@
     background-size: cover;          /* keep it full-bleed */
   }
 }
+
+/* Mobile: allow long paragraphs to expand naturally */
+@media (max-width: 768px){
+  .project-p{
+    height: auto;     /* remove the fixed cap                      */
+    min-height: 144px;/* optional – keeps the nice spacing on desktop */
+  }
+}

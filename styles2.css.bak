@@ -1195,3 +1195,15 @@ i.fas, i.fab{
   min-height: 900px; /* This is the default, allowing the iframe to adapt to content */
 }
 
+@media (max-width: 600px) {
+  .catalog-link {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.2em;
+  }
+  .greenwich-polo-main p {
+    margin-bottom: 1.2em;
+  }
+}
