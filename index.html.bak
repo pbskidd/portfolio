@@ -3,47 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecuadane Artisan Designs | Luxury Custom Blankets</title>
+    <title>Ecuadane Artisan Designs Portfolio| Custom Luxury Blankets</title>
 	
 	
-	<!-- Tailwind CSS -->
+	<!-- Tailwind.js, tailwind overrides.js-->
+    <script src="portfolio.js"></script>
+    
+	
+	<!-- Style, Style2, tailwind-overrides, parallax- CSS -->
+    <link rel="stylesheet" href="portfolio.css">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#2c3e50',
-                        secondary: '#34495e',
-                        accent: '#c0392b',
-                    },
-                    fontFamily: {
-                        sans: ['Montserrat', 'sans-serif'],
-                        serif: ['Playfair Display', 'serif'],
-                    },
-                }
-            }
-        }
-    </script>
-	
-	<!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styles2.css">
-	<link rel="stylesheet" href="tailwind-overrides.css">
+
 	
 	<!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
     <!-- Three.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -175,10 +155,10 @@
             <div class="trusted-logos">
                 <img src="assets/img/clubs/fcn_logo_2022.png" alt="Ferrari Club">
                 <img src="assets/img/clubs/Greenwich Polo Club-Logo.png" alt="Greenwich Polo">
-                <img src="assets/img/st-andrews-logo.svg" alt="St. Andrews">
+                <img src="assets/img/clubs/st-andrews-logo.svg" alt="St. Andrews">
                 <img src="assets/img/charities/Wounded_Warrior_Project_logo.svg.png" alt="Wounded Warrior">
-                <img src="assets/img/notre dame logo.jpg" alt="Notre Dame">
-                <img src="assets/img/Alisal Brand Lockup Black FA.jpg" alt="Alisal Ranch">
+                <img src="assets/img/universities/notre dame logo.jpg" alt="Notre Dame">
+                <img src="assets/img/hospitality/Alisal Brand Lockup Black FA.jpg" alt="Alisal Ranch">
             </div>
         </div>
     </section>		
@@ -413,44 +393,7 @@
         </div>
     </footer>
 
- <script>
-  AOS.init({
-    once: true,        // animate only the first time they scroll into view
-    duration: 600      // ms; adjust to taste
-  });
-</script>
-<script src="script.js"></script>
-<script>
-  const btn   = document.getElementById('menu-toggle');
-  const menu  = document.getElementById('mobile-menu');
-
-  btn.addEventListener('click', () => menu.classList.toggle('hidden'));
-</script>
-
-
-
-<script>
-/* ── Make whole gallery-item clickable ─────────────────────── */
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.gallery-item').forEach(item => {
-    const link = item.querySelector('a[href]');        // the existing “View Project” link
-    if (!link) return;                                 // skip if no link inside
-
-    item.style.cursor = 'pointer';                     // give visual cue
-
-    item.addEventListener('click', e => {
-      /* If the actual click was on a real <a>, let its default behaviour run.
-         Otherwise send the user to the same URL. */
-      let n = e.target;
-      while (n && n !== item) {
-        if (n.tagName === 'A') return;                 // already on a link – do nothing
-        n = n.parentElement;
-      }
-      window.location = link.href;                     // navigate
-    });
-  });
-});
-</script>
+<script src="portfolio2.js"></script>
 
 </body>
 </html>
