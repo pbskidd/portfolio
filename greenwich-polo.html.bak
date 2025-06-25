@@ -131,7 +131,7 @@
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-3xl font-serif font-bold mb-6 project-title">Project Overview</h2>
                 <p class="text-lg text-gray-700 mb-6 project-p description-main">For their 2025 season, Greenwich Polo Club sought to elevate their guest experience with a versatile high quality blanket that could be used on and off the field to spread awareness and grow attendance. Our custom-designed blanket, featuring the club's emblem and a classic forest green palette, combines luxury and performance. </p>
-				<div class="catalog-link" style="text-align: center; margin: 2rem 0;">
+				<div style="text-align: center; margin: 2rem 0;">
 					<a href="assets/attachments/greenwich polo catalog.pdf" target="_blank" rel="noopener" class="inline-block text-blue-600 hover:underline text-lg font-semibold">
 						View the Greenwich Polo Design Catalog (PDF)
 					</a>
