@@ -1237,7 +1237,7 @@ i.fas, i.fab{
 @media (max-width: 640px) {
   /* Ensure the parent wrapper can’t push children outside */
   .contact-wrap {
-    padding: 30px;       /* keep your 30px gutters */
+    padding: 0 30px;       /* keep your 30px gutters */
     overflow-x: hidden;    /* kill any horizontal scroll */
   }
 

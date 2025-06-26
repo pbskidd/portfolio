@@ -1,0 +1,28 @@
+/* ──────────────────────────────────────────────────────────────
+   MOBILE LAYOUT PATCH – paste this *after* your main stylesheet
+   ────────────────────────────────────────────────────────────── */
+@media (max-width: 767px) {           /* change 767 to your handset limit */
+
+  /* whatever outer element holds BOTH blocks – edit the selector if needed */
+  .contact-section {                  /* <div class="contact-section"> … */
+      display: flex;                  /* swap any floats / columns for flex */
+      flex-direction: column;         /* vertical stacking                 */
+      width: 100%;
+  }
+
+  /* full-width blocks, no floats, no desktop positioning tricks */
+  .contact-wrap,
+  .contact-form {
+      width: 100%   !important;       /* override fixed / percentage widths */
+      max-width: 100% !important;
+      float: none   !important;       /* neutralise old float rules         */
+      position: static !important;    /* cancels translate/absolute hacks   */
+      margin: 0;                      /* centre hacks no longer needed      */
+      box-sizing: border-box;
+      padding: 0 1rem;                /* side gutters – optional            */
+  }
+
+  /* order in the flex stack: wrap first, form second                  */
+  .contact-wrap { order: 0; }
+  .contact-form { order: 1; }
+}
