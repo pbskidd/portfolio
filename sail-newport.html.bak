@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Hotel Hershey | Custom Branded Blankets</title>
-    <meta
-        name="description"
-        content="Custom Ecuadane blankets for The Hotel Hershey – celebrating a Pennsylvania icon with Mediterranean-inspired luxury throws."
-    />
+    <title>Sail Newport| Regatta Blankets</title>
+    <meta name="description" content="Alisal Ranch custom branded blankets - Luxury guest ranch and resort in California's Santa Ynez Valley.">
+    
 	    <!-- Tailwind CSS -->
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -37,8 +35,8 @@
 	<!-- parallax -->
 	<link rel="stylesheet" href="parallax.css">
 	<style>
-		.parallax1 {background-image: url("assets/img/hospitality/hershey hotel view from above.jpg");}
-		.parallax2 {background-image: url("assets/img/hospitality/Hershey Hotel-blanket pattern.png");}
+		.parallax1 {background-image: url("assets/img/clubs/newport-regattas.png");}
+		.parallax2 {background-image: url("assets/img/clubs/sailing_sunset.jpg");}
 	</style>
 	
 	<!-- Google Fonts -->
@@ -76,7 +74,7 @@
 		  <ul class="hidden md:flex space-x-8 font-medium">
 			<li><a href="index.html#portfolio" class="hover:text-primary">Portfolio</a></li>
 			<li><a href="customization.html" class="hover:text-primary">How it Works</a></li>
-			<li><a href="https://www.ecuadane.com/collections/all" class="hover:text-primary">Retail Store</a></li>
+			<li><a href="https://www.ecuadane.com/collections/all" class="hover:text-primary">Private Collection</a></li>
 			<li><a href="about_us.html" class="hover:text-primary">About Us</a></li>
 		  </ul>
 
@@ -99,7 +97,7 @@
 		<li><a href="index.html"      class="block py-2 border-b">Home</a></li>
 		<li><a href="index.html#portfolio" class="block py-2 border-b">Portfolio</a></li>
 		<li><a href="customization.html" class="block py-2 border-b">How it Works</a></li>
-		<li><a href="https://www.ecuadane.com/collections/all" class="block py-2 border-b">Retail Store</a></li>
+		<li><a href="https://www.ecuadane.com/collections/all" class="block py-2 border-b">Private Collection</a></li>
 		<li><a href="about_us.html" class="block py-2">About Us</a></li>
 	  </ul>
 	</nav>
@@ -110,10 +108,10 @@
     <section class="pt-32 pb-12 bg-white">
         <div class="container mx-auto px-4">          
             <div class="flex flex-col md:flex-row items-center mb-12">
-                <img src="assets/img/hospitality/HotelHershey logo.png" alt="Hotel Hershey Logo" class="h-20 md:h-24 mr-6 mb-4 md:mb-0">
+                <img src="assets/img/clubs/sail newport-logo.svg" alt="Alisal Ranch Logo" class="h-20 md:h-24 mr-6 mb-4 md:mb-0">
                 <div>
-                    <h1 class="text-3xl md:text-5xl font-serif font-bold mb-2">The Hotel Hershey</h1>
-                    <p class="text-xl text-gray-600">Mediterranean-inspired Luxury Meets Chocolate Heritage</p>
+                    <h1 class="text-3xl md:text-5xl font-serif font-bold mb-2">Sail Newport</h1>
+                    <p class="text-xl text-gray-600">Rhode Island's Public Sailing Center</p>
                 </div>
             </div>
         </div>
@@ -122,7 +120,7 @@
 	<!-- Parallax Section -->
 	<section class="parallax parallax1">
 	  <div class="parallax-content">
-		<h2>Bring the magic home</h2>
+		<h2>Warmth for the wind & waves</h2>
 		</div>
 	</section>
 								
@@ -132,10 +130,9 @@
             <div class="max-w-4xl mx-auto">
 			
                 <h2 class="text-3xl font-serif font-bold mb-6 project-title">Project Overview</h2>
-                <p class="text-lg text-gray-700 mb-6 project-p">Perched atop Pat’s Hill and opened in 1933 by Milton S. Hershey during the depths of the Great Depression, The historic Hotel Hershey is celebrated for its Spanish Colonial Revival architecture, chocolate-infused hospitality. Our assignment was to weave that storied legacy into an intricate landscape, representing the splendor of the main hotel façade, providing a cozy touch for al-fresco patio evenings. 
-</p>
+                <p class="text-lg text-gray-700 mb-6 project-p">We teamed up with Sail Newport to create something special for their Member Sunset Socials. Cozy, high-performance wraps to keep sailors and spectators cozy during the twilight return of the fleet and the 'après-sail' camaraderie, stretching late into the crisp September nights.</p>
                 
-				<!--<div style="text-align: center; margin: 2rem 0;">
+				<!-- <div style="text-align: center; margin: 2rem 0;">
 					<a href="assets/attachments/alisal ranch catalog-t.pdf" target="_blank" rel="noopener" class="inline-block text-blue-600 hover:underline text-lg font-semibold">
 						View the Alisal Design Catalog (PDF)
 					</a>
@@ -148,19 +145,17 @@
 	  <div class="container mx-auto px-4">
 		<div class="gallery-4">
 		  <figure class="gallery-4-item">
-			<img src="assets/img/hospitality/Hotel Hershey Veranda.jpeg" class="popout" alt="Hershey Hotel - Image 1">
+			<img src="assets/img/clubs/Newport Arial View.png" class="popout" alt="Arial View of Newport dock">
 		  </figure>
 		  <figure class="gallery-4-item">
-			<img src="assets/img/hospitality/hotel hershey-front.jpg" class="popout"  alt="Hershey Hotel - Image 2">
+			<img src="assets/img/clubs/Spinnaker Regatta.jpg" class="popout"  alt="Spinnaker Regatta">
 		  </figure>
 		  <figure class="gallery-4-item">
-			<img src="assets/img/hospitality/Hershey Fountain.png" class="popout"  alt="Hershey Hotel - Image 3">
+			<img src="assets/img/clubs/Volunteers.png" class="popout"  alt="Regatta Volunteers">
 		  </figure>
-			<figure class="gallery-4-item">
-			<img src="assets/img/hospitality/Spa at Hotel Hershey.png" class="popout"  alt="Hershey Hotel - Image 3">
+		  <figure class="gallery-4-item">
+			<img src="assets/img/clubs/Afternoon Sail.png" class="popout"  alt="Afternoon Sailing">
 		  </figure>
-
-
 		</div>
 	  </div>
 	</section>				
@@ -173,12 +168,11 @@
                     <div class="text-accent text-4xl mb-4">
                         <i class="fas fa-quote-left"></i>
                     </div>
-                    <p class="text-gray-700 mb-6 text-lg italic">"“Our guests adore the blankets—each one feels like a handwritten love letter from Hershey, capturing both our history and our commitment to genuine hospitality.”
-</p>
+                    <p class="text-gray-700 mb-6 text-lg italic">"Loved by sailors on the long leg home after the regatta."</p>
                     <div class="flex items-center">
                         <div>
-                            <h4 class="font-bold">The Hotel Hershey Merchandising Team</h4>
-                            <p class="text-sm text-gray-500">Retail & Guest Experience Manager</p>
+                            <h4 class="font-bold">Sail Newport</h4>
+                            <p class="text-sm text-gray-500">Regatta Manager</p>
                         </div>
                     </div>
                 </div>
@@ -187,7 +181,7 @@
 
         </div>
     </section>
-     <!-- Parallax Section#2 -->
+    <!-- Parallax Section#2 -->
 	<section class="parallax parallax2">
 	  <div class="parallax-content">
 		<h2>Ready to Create Your Own?</h2>
@@ -207,6 +201,7 @@
             </div>
         </div>
     </footer>
+
     
 		 <script>
 		  AOS.init({
@@ -220,7 +215,5 @@
 		  const menu  = document.getElementById('mobile-menu');
 		  btn.addEventListener('click', () => menu.classList.toggle('hidden'));
 		</script>
-		
-
 	</body>
 </html>

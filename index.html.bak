@@ -45,7 +45,7 @@
       <ul class="hidden md:flex space-x-8 font-medium">
         <li><a href="index.html#portfolio" class="hover:text-primary">Portfolio</a></li>
         <li><a href="customization.html" class="hover:text-primary">How it Works</a></li>
-		<li><a href="https://www.ecuadane.com/collections/all" class="hover:text-primary">Private Collection</a></li>
+		<li><a href="https://www.ecuadane.com/collections/all" class="hover:text-primary">Retail Store</a></li>
 		<li><a href="about_us.html" class="hover:text-primary">About Us</a></li>
       </ul>
 
@@ -88,7 +88,7 @@
                             <img src="assets/img/2021-Ecuadane-Logos-Icons-white.png" alt="Ecuadane Logo">
                         </div>
                         <h1 class="hero-title">Branding That Embraces</h1>
-                        <h2 class="hero-subtitle">Warmth worth sharing, make a lasting mpression</h2>
+                        <h2 class="hero-subtitle">Warmth worth sharing, make a lasting impression</h2>
                         <p class="hero-description"> </p>
                         <div class="hero-buttons">
                             

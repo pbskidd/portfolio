@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Hotel Hershey | Custom Branded Blankets</title>
-    <meta
-        name="description"
-        content="Custom Ecuadane blankets for The Hotel Hershey – celebrating a Pennsylvania icon with Mediterranean-inspired luxury throws."
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrari Club Project | Ecuadane Artisan Designs</title>
+ 
+   
 	    <!-- Tailwind CSS -->
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -37,8 +36,8 @@
 	<!-- parallax -->
 	<link rel="stylesheet" href="parallax.css">
 	<style>
-		.parallax1 {background-image: url("assets/img/hospitality/hershey hotel view from above.jpg");}
-		.parallax2 {background-image: url("assets/img/hospitality/Hershey Hotel-blanket pattern.png");}
+		.parallax1 {background-image: url("assets/img/clubs/Ferrari7.png");}
+		.parallax2 {background-image: url("assets/img/clubs/Ferrari-Netherlands-horiz.png");}
 	</style>
 	
 	<!-- Google Fonts -->
@@ -110,10 +109,11 @@
     <section class="pt-32 pb-12 bg-white">
         <div class="container mx-auto px-4">          
             <div class="flex flex-col md:flex-row items-center mb-12">
-                <img src="assets/img/hospitality/HotelHershey logo.png" alt="Hotel Hershey Logo" class="h-20 md:h-24 mr-6 mb-4 md:mb-0">
+                <img src="assets/img/clubs/fcn_logo_2022.png" alt="Ferrari Club Logo" class="h-20 md:h-24 mr-6 mb-4 md:mb-0">
                 <div>
-                    <h1 class="text-3xl md:text-5xl font-serif font-bold mb-2">The Hotel Hershey</h1>
-                    <p class="text-xl text-gray-600">Mediterranean-inspired Luxury Meets Chocolate Heritage</p>
+                    <h1 class="text-3xl md:text-5xl font-serif font-bold mb-2" >Ferrari Owners' Club of the Netherlands</h1>
+					<p class="text-xl">European Rally 2025</p>
+					
                 </div>
             </div>
         </div>
@@ -122,7 +122,7 @@
 	<!-- Parallax Section -->
 	<section class="parallax parallax1">
 	  <div class="parallax-content">
-		<h2>Bring the magic home</h2>
+		<h2>The annual European tour: luxury and excitement, woven together.</h2>
 		</div>
 	</section>
 								
@@ -132,38 +132,41 @@
             <div class="max-w-4xl mx-auto">
 			
                 <h2 class="text-3xl font-serif font-bold mb-6 project-title">Project Overview</h2>
-                <p class="text-lg text-gray-700 mb-6 project-p">Perched atop Pat’s Hill and opened in 1933 by Milton S. Hershey during the depths of the Great Depression, The historic Hotel Hershey is celebrated for its Spanish Colonial Revival architecture, chocolate-infused hospitality. Our assignment was to weave that storied legacy into an intricate landscape, representing the splendor of the main hotel façade, providing a cozy touch for al-fresco patio evenings. 
-</p>
+                <p class="text-lg text-gray-700 mb-6 project-p">The Ferrari Club of the Netherlands wanted an exclusive memento for its flagship event. We collaborated to design a custom blanket featuring the club's logo of the iconic Ferrari stallion atop the bold colors of the Holland flag. The blankets were presented on the opening evening, becoming an instant conversation piece and treasured gear on the tour.</p>
                 
-				<!--<div style="text-align: center; margin: 2rem 0;">
-					<a href="assets/attachments/alisal ranch catalog-t.pdf" target="_blank" rel="noopener" class="inline-block text-blue-600 hover:underline text-lg font-semibold">
-						View the Alisal Design Catalog (PDF)
-					</a>
-				</div>-->
+
 			</div>
 		</div>
 	</section>					
 				
-	<section class="py-12 bg-gray-50">
-	  <div class="container mx-auto px-4">
-		<div class="gallery-4">
-		  <figure class="gallery-4-item">
-			<img src="assets/img/hospitality/Hotel Hershey Veranda.jpeg" class="popout" alt="Hershey Hotel - Image 1">
-		  </figure>
-		  <figure class="gallery-4-item">
-			<img src="assets/img/hospitality/hotel hershey-front.jpg" class="popout"  alt="Hershey Hotel - Image 2">
-		  </figure>
-		  <figure class="gallery-4-item">
-			<img src="assets/img/hospitality/Hershey Fountain.png" class="popout"  alt="Hershey Hotel - Image 3">
-		  </figure>
-			<figure class="gallery-4-item">
-			<img src="assets/img/hospitality/Spa at Hotel Hershey.png" class="popout"  alt="Hershey Hotel - Image 3">
-		  </figure>
-
-
-		</div>
-	  </div>
-	</section>				
+    <!-- Image Gallery -->
+    <section class="section-padding bg-soft-cream">
+        <div class="container">
+            <h2 class="text-headline text-center">Project Gallery</h2>
+            <div class="project-gallery">
+                <div class="gallery-item large">
+                    <img src="assets/img/tmpferrari2.png" alt="Ferrari Blanket Design" class="subtle-rounded">  
+                    <div class="smoke-overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/clubs/Ferrari1.png" alt="Ferrari Detail 1" class="subtle-rounded">
+                    <div class="smoke-overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/clubs/Ferrari2.png" alt="Ferrari Detail 2" class="subtle-rounded">
+                    <div class="smoke-overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/clubs/Ferrari3.png" alt="Ferrari Detail 3" class="subtle-rounded">
+                    <div class="smoke-overlay"></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/img/clubs/Ferrari bags.jpg" alt="Ferrari Packaging" class="subtle-rounded">
+                    <div class="smoke-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>			
 				
 	<section class="py-12 bg-white">
         <div class="container mx-auto px-4">
@@ -173,12 +176,11 @@
                     <div class="text-accent text-4xl mb-4">
                         <i class="fas fa-quote-left"></i>
                     </div>
-                    <p class="text-gray-700 mb-6 text-lg italic">"“Our guests adore the blankets—each one feels like a handwritten love letter from Hershey, capturing both our history and our commitment to genuine hospitality.”
-</p>
+                    <p class="text-gray-700 mb-6 text-lg italic">"The custom blankets created for our club members exceeded our expectations. The attention to detail and quality craftsmanship perfectly captured the essence of our brand and created a memorable keepsake for our European tour."</p>
                     <div class="flex items-center">
                         <div>
-                            <h4 class="font-bold">The Hotel Hershey Merchandising Team</h4>
-                            <p class="text-sm text-gray-500">Retail & Guest Experience Manager</p>
+                            <h4 class="font-bold">Club President</h4>
+                            <p class="text-sm text-gray-500">Ferrari Club of the Netherlands</p>
                         </div>
                     </div>
                 </div>
@@ -187,15 +189,15 @@
 
         </div>
     </section>
-     <!-- Parallax Section#2 -->
+    <!-- Parallax Section#2 -->
 	<section class="parallax parallax2">
 	  <div class="parallax-content">
 		<h2>Ready to Create Your Own?</h2>
 	   <p class="text-xl mb-8 max-w-3xl mx-auto">Let's design a custom blanket to tell your story and create a lasting impression.</p>
 	   <a href="about-us.html#contact" class="btn-primary">Start Your Design</a>
-	   <br><br><a class="backlink" href="index.html#portfolio">Back to Gallery</a>
+	   <br><br><a href="index.html#portfolio">Back to Gallery</a>
 	  </div>
-	</section>
+	</section
 
     
  <!-- Footer -->
@@ -220,7 +222,5 @@
 		  const menu  = document.getElementById('mobile-menu');
 		  btn.addEventListener('click', () => menu.classList.toggle('hidden'));
 		</script>
-		
-
 	</body>
 </html>
