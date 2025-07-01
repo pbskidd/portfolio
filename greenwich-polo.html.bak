@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Greenwich Polo Club | Custom Branded Blankets</title>
+	<link rel="icon" href="assets/img/favicon.png" type="image/x-icon">
     <meta name="description" content="Greenwich Polo Club custom branded blankets - Prestigious polo club known for hosting world-class tournaments and events.">
     
 	    <!-- Tailwind CSS -->

@@ -67,7 +67,7 @@
 		  <ul class="hidden md:flex space-x-8 font-medium">
 			<li><a href="index.html#portfolio" class="hover:text-primary">Portfolio</a></li>
 			<li><a href="customization.html" class="hover:text-primary">How it Works</a></li>
-			<li><a href="https://www.ecuadane.com/collections/all" class="hover:text-primary">Private Collection</a></li>
+			<li><a href="https://www.ecuadane.com/collections/all" class="hover:text-primary">Retail Store</a></li>
 			<li><a href="about_us.html" class="hover:text-primary">About Us</a></li>
 		  </ul>
 
