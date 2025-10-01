@@ -597,7 +597,7 @@
 
                 <a href="https://portfolio.ecuadane.com/about_us.html#contact" class="cta-button">👉 Schedule a Conversation</a>
                 <br><br>
-<span id="page-views">—</span> views
+<span id="page-views"> </span>
             </div>
         </section>
 
@@ -649,38 +649,6 @@
                 observer.observe(el);
             });
         </script>
-        <script>
-(() => {
-  // Make a per-page key from your host + path (lowercased, safe chars)
-  const key = ('ghp:' + location.host + location.pathname)
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '_')
-    .replace(/^_+|_+$/g, '');
-
-  const el = document.getElementById('page-views');
-  if (!el) return;
-
-  // Increment & fetch the total count for this key
-  fetch('https://countapi.mileshilliard.com/api/v1/hit/' + encodeURIComponent(key), {
-    method: 'GET',
-    cache: 'no-store',
-  })
-    .then(r => r.json())
-    .then(data => {
-      // Try common JSON shapes: { value }, { count }, { data }
-      const raw = (data && (data.value ?? data.count ?? data.data)) || 0;
-      // Optional: format with commas
-      el.textContent = Number(raw).toLocaleString();
-    })
-    .catch(() => {
-      // Fallback: per-browser local counter if the free endpoint is down
-      const lsKey = 'pv_' + key;
-      const n = (parseInt(localStorage.getItem(lsKey) || '0', 10) + 1);
-      localStorage.setItem(lsKey, String(n));
-      el.textContent = n.toLocaleString() + ' (local)';
-    });
-})();
-</script>
-
+        
     </body>
 </html>
