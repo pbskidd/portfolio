@@ -386,6 +386,25 @@
                     padding: 60px 0;
                 }
             }
+            
+            
+            @media (min-width: 768px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    min-height: 100vh; /* Ensures full viewport height for proper centering; adjust if your hero has a fixed height */
+  }
+  
+  .hero-content {
+    width: 100%; /* Prevents any width shrinkage from Flexbox */
+  }
+}
+            
+            
+            
+            
+            
+ 
         </style>
     </head>
     <body>
@@ -454,11 +473,13 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="container">
+                <section>
                 <div class="hero-content">
                     <h1>Make Your Donors Feel Appreciated.</h1>
                     <p>Give a gift they'll use every day—and never forget where it came from.</p>
                     <a href="https://portfolio.ecuadane.com/about_us.html#contact" class="cta-button">👉 Let's Talk About Donor Recognition</a>
                 </div>
+                    </section>
             </div>
         </section>
 
