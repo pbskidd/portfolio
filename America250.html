@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>America250 | Ecuadane Artisan Designs</title>
+ 
+   
+	    <!-- Tailwind CSS -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2c3e50',
+                        secondary: '#34495e',
+                        accent: '#c0392b',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+	
+	<!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles2.css">
+	<link rel="stylesheet" href="tailwind-overrides.css">
+	<!-- parallax -->
+	<link rel="stylesheet" href="parallax.css">
+	<style>
+		.parallax1 {background-image: url("assets/img/charities/fireworks_family_redwhiteblue.gif");}
+		.parallax2 {background-image: url("assets/img/charities/Boston Concert.png");}
+        
+	</style>
+	
+	<!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	
+</head>
+
+<body class="font-sans text-gray-800 bg-gray-50">
+
+	<!-- Navigation -->
+	<!-- Navigation -->
+	<nav class="nav-container bg-white shadow-lg">
+	  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="flex justify-between h-16 items-center">
+
+		  <!-- ① Brand / logo -->
+		  <a href="index.html" class="flex items-center">
+			<img src="assets/img/Ecuadane Logo-sm.png" alt="Brand" class="h-12 w-auto">
+		  </a>
+
+		  <!-- ② Desktop links -->
+		  <ul class="hidden md:flex space-x-8 font-medium">
+			<li><a href="index.html#portfolio" class="hover:text-primary">Portfolio</a></li>
+			<li><a href="customization.html" class="hover:text-primary">How it Works</a></li>
+			<li><a href="https://www.ecuadane.com/collections/all" class="hover:text-primary">Retail Store</a></li>
+			<li><a href="about_us.html" class="hover:text-primary">About Us</a></li>
+		  </ul>
+
+		  <!-- ③ Hamburger button (md:hidden keeps it mobile-only) -->
+		  <button id="menu-toggle"
+				  class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-primary">
+			<!-- Icon from Heroicons -->
+			<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+				 fill="none" viewBox="0 0 24 24" stroke="currentColor">
+			  <path stroke-linecap="round" stroke-linejoin="round"
+					stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+			</svg>
+		  </button>
+		</div>
+	  </div>
+
+	  <!-- ④ Mobile slide-down menu -->
+	  <ul id="mobile-menu"
+		  class="md:hidden hidden px-4 pb-4 space-y-2 font-medium">
+		<li><a href="index.html"      class="block py-2 border-b">Home</a></li>
+		<li><a href="index.html#portfolio" class="block py-2 border-b">Portfolio</a></li>
+		<li><a href="customization.html" class="block py-2 border-b">How it Works</a></li>
+		<li><a href="https://www.ecuadane.com/collections/all" class="block py-2 border-b">Retail Store</a></li>
+		<li><a href="about_us.html" class="block py-2">About Us</a></li>
+	  </ul>
+	</nav>
+	 <!-- END NAVIGATION -->    
+	
+
+    <!-- Project Header -->
+    <section class="pt-32 pb-12 bg-white">
+        <div class="container mx-auto px-4">          
+            <div class="flex flex-col md:flex-row items-center mb-12">
+                <img src="assets/img/charities/America250_logo.svg" alt="Ferrari Club Logo" class="h-20 md:h-24 mr-6 mb-4 md:mb-0">
+                <div>
+                    <h1 class="text-3xl md:text-5xl font-serif font-bold mb-2" >America250</h1>
+					<p class="text-xl">Official Congressional body orchestrating the most ambitious & broad-reaching commemoration in U.S. history.</p>
+					
+                </div>
+            </div>
+        </div>  
+    </section>
+	
+	<!-- Parallax Section -->
+	<section class="parallax parallax1">
+	  <div class="parallax-content">
+		<h2>Uniting to celebrate America's 250th Anneversary.</h2>
+		</div>
+	</section>
+								
+    <!-- Project Description -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+			
+                <h2 class="text-3xl font-serif font-bold mb-6 project-title">Project Overview</h2>
+                <p class="text-lg text-gray-700 mb-6 project-p">Ecuadane is honored to serve as official blanket partner for America250. Our custom design—uniting exceptional craftsmanship with the nation’s colors—will appear at thousands of Semiquincentennial events, from cereimonies are our Capitol to on-location photo shoots documenting the year-long celebration. Limited editions will be released through select retailers, allowing supporters everywhere to share in this once-in-250-years milestone.</p>
+                
+
+			</div>
+		</div>
+	</section>					
+				
+				
+	<section class="py-12 bg-gray-50">
+	  <div class="container mx-auto px-4">
+          Choose your style.<br><br>
+			<div class="gallery-4">
+                
+			<figure class="gallery-4-item">
+				
+                <a href="https://www.ecuadane.com/products/brilliant-heritage-america-250"><img src="assets/img/charities/A250-Brilliant Heritage.jpg" class="popout" alt="America250 Bright Heritage blanket"><br>Brilliant Heritage</a>
+            </figure>
+		    <figure class="gallery-4-item">
+				
+                
+                <a href="https://www.ecuadane.com/products/bands-of-freedom-america-250"><img src="assets/img/charities/A250-Bands of Freedom.jpg" class="popout" alt="America250 Bands of Freedom blanket"><br>Bands of Freedom</a>
+                
+			</figure>
+			<figure class="gallery-4-item">
+				
+                
+                
+                <a href="https://www.ecuadane.com/products/america-250-sea-to-shining-sea"><img src="assets/img/charities/A250-Sea to Shining Sea.jpg" class="popout" alt="America250 Sea to Shining Sea blanket"><br>Sea to Shining Sea</a>
+                
+			</figure>
+			<figure class="gallery-4-item">
+				
+                
+                <a href="https://www.ecuadane.com/products/america-250-signature-throw-blanket"><img src="assets/img/charities/A250-Signature Logo-Studio.jpg" class="popout" alt="America250 Signature Logo blanket"><br>America250 Signature Logo</a>
+                
+			</figure>	  
+		</div>
+	  </div>
+
+	</section>				
+	
+    <!--
+	<section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+			
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md mt-8">
+                    <div class="text-accent text-4xl mb-4">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 text-lg italic">"These blankets were the talk of the tournament—a true reflection of our club's heritage and sophistication. They've enhanced our guest experience and become a distinctive part of our brand."</p>
+                    <div class="flex items-center">
+                        <div>
+                            <h4 class="font-bold">Greenwich Polo Club</h4>
+                            <p class="text-sm text-gray-500">Special Events Coordinator</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    <!-- Parallax Section#2 -->
+	<section class="parallax parallax2">
+	  <div class="parallax-content">
+		<h2>Ready to Celebrate?</h2>
+	   <p class="text-xl mb-8 max-w-3xl mx-auto">Mark this historic milestone with a heirloom keepsake.</p>
+	   <a href="https://www.ecuadane.com/collections/america-250-commemorative-blanket-collection" class="btn-primary">Shop Now</a>
+	   <br><br><a href="index.html#portfolio">Back to Gallery</a>
+	  </div>
+	</section
+
+    
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ecuadane Artisan Designs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+		 <script>
+		  AOS.init({
+			once: true,        // animate only the first time they scroll into view
+			duration: 600      // ms; adjust to taste
+		  });
+		</script>
+		<script src="script.js"></script>
+		<script>
+		  const btn   = document.getElementById('menu-toggle');
+		  const menu  = document.getElementById('mobile-menu');
+		  btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+		</script>
+	</body>
+</html>
